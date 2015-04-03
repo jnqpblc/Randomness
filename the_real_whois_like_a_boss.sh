@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/usr/bin/env python
 # the_real_whois_like_a_boss.sh - Commandline ARIN Advanced Query Tool
 # v0.02 2015/01/15
 #
