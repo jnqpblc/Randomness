@@ -1,5 +1,5 @@
 #!/bin/bash
-# bing-dem-ips.sh - Commandline IP Address Binger Tool
+# bing_dem_ips.sh - Commandline IP Address Binger Tool
 # v0.01 2015/01/15
 #
 # Copyright (C); 2014 jnqpblc - jnqpblc at gmail
