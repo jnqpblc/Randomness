@@ -17,9 +17,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-awk -F "," '{print $4}' nikto/program/databases/db_tests|egrep -v '^"@'|egrep '^"'|sort -u|sed 's/^"//g; s/"$//g' > nikto-list-burp-intruder.lst;
+awk -F "," '{print $4}' nikto/program/databases/db_tests|egrep -v '^"@'|egrep '^"'|sort -u|sed 's/^"//g; s/"$//g' > wordlist/webapp-nikto-database.lst;
 for var in $(egrep '^@' nikto/program/databases/db_variables|cut -d'=' -f1); do
    for path in $(egrep "^$var" nikto/program/databases/db_variables|cut -d'=' -f2); do
-      escpath=$(echo $path|sed 's/\//\\\//g'); awk -F "," '{print $4}' nikto/program/databases/db_tests|grep "$var"|sed "s/$var/$escpath/"|sed 's/^"//g; s/"$//g' >> nikto-list-burp-intruder.lst;
+      escpath=$(echo $path|sed 's/\//\\\//g'); awk -F "," '{print $4}' nikto/program/databases/db_tests|grep "$var"|sed "s/$var/$escpath/"|sed 's/^"//g; s/"$//g' >> wordlist/webapp-nikto-database.lst
    done
 done;
