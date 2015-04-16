@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # single_port_finger.py - The name says it all.
-# v0.01 2015/04/15
+# v0.02 2015/04/15
 #
 # Copyright (C); 2015 jnqpblc - jnqpblc at gmail
 #
@@ -29,7 +29,7 @@ from scapy.all import *
 target = sys.argv[1]
 dstport = int(sys.argv[2])
 
-scan=IP(dst=target)/TCP(dport=[dstport],flags="S")
+scan=IP(dst=target)/TCP(sport=RandNum(1024,65535),dport=[dstport],flags="S")
 ans,unans=(sr(scan,inter=0.0000001,timeout=1,verbose=0,filter="src " + target))
 for snd,rcv in ans:
 	print "IP/TCP ttl:" + str(rcv.ttl), str(rcv.src) + ":" + str(rcv.sport) + " > " + str(rcv.dst) + ":" + str(rcv.dport) + " " + rcv.sprintf('%TCP.flags%')
