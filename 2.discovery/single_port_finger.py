@@ -18,7 +18,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import sys
-
 if len(sys.argv) < 3:
     sys.exit('\nUsage: %s 192.168.1.10 80|443|21|22|23|etc\n' % sys.argv[0])
 
@@ -33,4 +32,3 @@ scan=IP(dst=target)/TCP(sport=RandNum(1024,65535),dport=[dstport],flags="S")
 ans,unans=(sr(scan,inter=0.0000001,timeout=1,verbose=0,filter="src " + target))
 for snd,rcv in ans:
 	print "IP/TCP ttl:" + str(rcv.ttl), str(rcv.src) + ":" + str(rcv.sport) + " > " + str(rcv.dst) + ":" + str(rcv.dport) + " " + rcv.sprintf('%TCP.flags%')
-	
