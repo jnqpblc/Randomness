@@ -1,1 +1,3 @@
 git clone https://github.com/MarioVilas/google
+
+python google.py 'site:example.com -site:www.example.com'
