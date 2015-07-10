@@ -18,8 +18,10 @@ check_scan () {
         sendmail -t < ${EMAILMESSAGE}
     fi
 }
+date > /root/.clamav/lastrun.daily
 clamscan -r / --exclude-dir=/sys/ --quiet --infected --log=${LOG}
 check_scan
+date >> /root/.clamav/lastrun.daily
 
 # cron.job
 # 0 1 * * * /usr/local/bin/clamav-scan-daily.sh
