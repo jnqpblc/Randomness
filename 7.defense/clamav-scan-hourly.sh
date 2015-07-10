@@ -1,4 +1,5 @@
 #!/bin/bash
+# http://www.digitalsanctuary.com/tech-blog/debian/automated-clamav-virus-scanning.html
 SUBJECT="VIRUS DETECTED ON `hostname`!!!"
 TO="support@domain.com"
 FROM="alerts@domain.com"
@@ -17,8 +18,10 @@ check_scan () {
         sendmail -t < ${EMAILMESSAGE}
     fi
 }
+date > /root/.clamav/lastrun.hourly
 find / -not -wholename '/sys/*' -and -not -wholename '/proc/*' -mmin -61 -type f -print0 | xargs -0 -r clamscan --exclude-dir=/proc/ --exclude-dir=/sys/ --quiet --infected --log=${LOG}
 check_scan
+date >> /root/.clamav/lastrun.hourly
 
 # cron.job
 # 60 * * * * /usr/local/bin/clamav-scan-hourly.sh
