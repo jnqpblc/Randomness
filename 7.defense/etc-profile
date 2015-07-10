@@ -1,0 +1,21 @@
+umask 077
+shopt -s histappend
+shopt -s histverify
+
+export HISTFILE=~/.bash_history
+export HISTFILESIZE=1000000000
+export HISTSIZE=5000
+export HISTCONTROL=""
+export HISTIGNORE=""
+export HISTTIMEFORMAT="%F %T  "
+export PROMPT_COMMAND="history -a"
+
+readonly HISTFILE
+readonly HISTFILESIZE
+readonly HISTSIZE
+readonly HISTCONTROL
+readonly HISTIGNORE
+readonly HISTTIMEFORMAT
+readonly HISTCMD
+readonly HOME
+readonly PATH
