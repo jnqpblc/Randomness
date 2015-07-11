@@ -1,0 +1,5 @@
+# Weekly reboot, runs Sunday at 4:20 a.m.
+30 4 * * 0 /sbin/reboot
+
+# Time sync, runs every 15 minutes
+15 * * * * /usr/sbin/ntpdate time.nist.gov >/dev/null 2>&1
