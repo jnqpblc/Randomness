@@ -1,4 +1,5 @@
- #!/bin/bash
+#!/bin/bash
+# https://www.owasp.org/index.php/Automated_Audit_using_SKIPFISH
 if [ -z $1 ]; then printf "\nSytnax: $0 <client>\n\n"
 	else
 CLIENT=$1; URI_TO_IGNORE='/css/,/img/,/images/,/js/,/doc/'; SUPP_DICT='/usr/share/skipfish/dictionaries/extensions-only.wl'
