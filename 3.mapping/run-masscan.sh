@@ -1,4 +1,5 @@
 #!/bin/bash
+# git clone https://github.com/robertdavidgraham/masscan.git
 if [ -z $3 ]; then printf "\nSytnax: $0 <client> <file of ips> <rate|e.g. 1000>\n\n"
 	else
    CLIENT=$1; FILE=$2; RATE=$3;
