@@ -1,0 +1,60 @@
+# https://www.owasp.org/index.php/Automated_Audit_using_W3AF
+
+# Configure HTTP settings
+http-settings
+set timeout 30
+back
+
+# Configure scanner global behaviors
+misc-settings
+set max_discovery_time 20
+set fuzz_cookies True
+set fuzz_form_files True
+set fuzz_url_parts True
+set fuzz_url_filenames True
+back
+plugins
+
+# Configure entry point (CRAWLING) scanner
+crawl web_spider
+crawl config web_spider
+set only_forward False
+set ignore_regex (?i)(logout|disconnect|signout|exit)+
+back
+
+# Configure vulnerability scanners
+
+## Specify list of AUDIT plugins
+audit all
+audit config file_upload
+set extensions jsp,php,php2,php3,php4,php5,asp,aspx,pl,cfm,rb,py,sh,ksh,csh,bat,ps,exe
+back
+
+## Specify list of GREP plugins
+grep all
+
+## Specify list of INFRASTRUCTURE plugins
+infrastructure all
+
+# Configure reporting in order to generate an HTML report
+output console, html_file, text_file
+output config html_file
+set output_file ~/{CLIENT}/w3af-output-{TARGET}-{PORT}-{PROTO}.html
+set verbose False
+back
+output config text_file
+set output_file ~/{CLIENT}/w3af-output-{TARGET}-{PORT}-{PROTO}.txt
+set verbose False
+back
+output config console
+set verbose False
+back
+back
+
+# Set target informations, do a cleanup and run the scan
+target 
+set target {PROTO}://{TARGET}:{PORT}/
+back
+cleanup
+start
+exit
