@@ -2,6 +2,9 @@
 alias msf='msfconsole -r ~/.msf4/msfconsole.rc'
 alias msfconsole='msfconsole -r ~/.msf4/msfconsole.rc'
 export MSF_DATABASE_CONFIG=/usr/share/metasploit-framework/config/database.yml
+alias uag="--script-args http.useragent='Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'"
+alias uay="--script-args http.useragent='Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)'"
+alias apikey="--script-args http-google-malware.api='{google-api-key}'"
 
 # Added ":\D{%F-%T}~" to the end of the prompt
 # Eg. root@kali:~:2015-06-21-07:55:37~#
