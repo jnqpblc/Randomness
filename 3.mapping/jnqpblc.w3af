@@ -1,0 +1,70 @@
+# Configure HTTP settings
+http-settings
+set timeout 30
+back
+
+# Configure global settings
+misc-settings
+set max_discovery_time 20
+set fuzz_cookies True
+set fuzz_form_files True
+set fuzz_url_parts True
+set fuzz_url_filenames True
+back
+
+# Configure PLUGINS
+plugins
+
+# Configure OUTPUT
+output console,text_file,html_file
+output config text_file
+set output_file ~/{CLIENT}/w3af-output-{TARGET}-{PORT}.txt
+set verbose True
+back
+output config html_file
+set output_file ~/{CLIENT}/w3af-output-{TARGET}-{PORT}.html
+set verbose True
+back
+output config console
+set verbose False
+back
+output
+
+# Configure AUDIT
+audit all, !rfi
+audit config file_upload
+set extensions jsp,php,php2,php3,php4,php5,asp,aspx,pl,cfm,rb,py,sh,ksh,csh,bat,ps,exe
+back
+audit
+
+# Configure CRAWL
+crawl all, !ghdb, !import_results, !spider_man, !web_diff
+crawl config web_spider
+set only_forward False
+set ignore_regex (?i)(logout|disconnect|signout|exit)+
+back
+crawl
+
+# Configure GREP
+grep all
+#grep config ???
+#back
+grep
+
+# Configure INFRASTRUCTURE
+infrastructure all
+#infrastructure config ???
+#back
+infrastructure
+
+# Exit plugin configuration
+back
+
+# Configure TARGET
+target
+set target {PROTO}://{TARGET}:{PORT}/
+back
+
+# Begin
+cleanup
+start
