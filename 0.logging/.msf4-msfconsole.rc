@@ -1,0 +1,10 @@
+db_connect msf:{password}@127.0.0.1:5432/msf
+set PROMPT msf %red%L %blu%T %grnS:%S %grnJ:%J 
+setg PAYLOAD windows/meterpreter/reverse_https
+setg LPORT 443
+set ConsoleLogging true
+set LogLevel 5
+set SessionLogging true
+set TimestampOutput true
+spool /root/.msf4/logs/msfconsole-spool.log
+clear
