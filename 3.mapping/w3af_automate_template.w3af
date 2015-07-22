@@ -44,7 +44,7 @@ infrastructure server_header, server_status, domain_dot, dot_net_errors
 # Configure reporting in order to generate an HTML report
 output console, html_fie
 output config html_file
-set output_file /root/{PROJECT}-{TARGET}-W3afReport.html
+set output_file ~/{CLIENT}/{PROJECT}-{TARGET}-W3af-Report.html
 set verbose False
 back
 output config console
