@@ -42,9 +42,13 @@ html_comments, objects, path_disclosure, private_ip, strange_headers, strange_ht
 infrastructure server_header, server_status, domain_dot, dot_net_errors
 
 # Configure reporting in order to generate an HTML report
-output console, html_fie
+output console, html_file, text_file
 output config html_file
-set output_file ~/{CLIENT}/W3af-Report-{TARGET}.html
+set output_file ~/{CLIENT}/w3af_report_{TARGET}_{PROTO}.html
+set verbose False
+back
+output config text_file
+set output_file ~/{CLIENT}/w3af_report_{TARGET}_{PROTO}.txt
 set verbose False
 back
 output config console
@@ -54,7 +58,7 @@ back
 
 # Set target informations, do a cleanup and run the scan
 target 
-set target {TARGET}
+set target {PROTO}://{TARGET}
 set target_os {OS}
 set target_framework {LANG}
 back
