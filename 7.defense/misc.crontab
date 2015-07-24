@@ -1,4 +1,4 @@
-# Weekly reboot, runs Sunday at 4:20 a.m.
+# Weekly reboot, runs Sunday at 4:30 a.m.
 30 4 * * 0 /sbin/reboot
 
 # Time sync, runs every 15 minutes
