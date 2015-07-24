@@ -1,6 +1,6 @@
 #!/bin/bash
-/sbin/ifconfig tun0 >/dev/null 2>&1
-if [ $? -eq 1 ];then
+ifconfig|egrep -o 'tun[0-9]{1,2}' >/dev/null
+if [ $? -ne 0 ];then
 	killall openvpn
 	/usr/sbin/openvpn --config /root/uplink.ovpn --status /var/log/openvpn/status.log 30 --log-append /var/log/openvpn/connection.log &
 	else echo "Connection already established."
