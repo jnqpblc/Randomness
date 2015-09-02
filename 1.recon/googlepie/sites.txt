@@ -25,6 +25,7 @@ xerox.com
 adobe.com
 mail-archives.apache.org
 stackoverflow.com
+zone-h.org
 pastie.org
 paste2.org
 slexy.org
