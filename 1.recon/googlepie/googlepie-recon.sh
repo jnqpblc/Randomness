@@ -3,7 +3,7 @@ if [ -z $1 ];then printf "\nSyntax $0 <domain> <-s sites.txt|-e extensions.txt|-
 	else
 
 domain="$1"
-part='/ajax/services/search/web?v=1.0&rsz=large'
+part='ajax/services/search/web?v=1.0&rsz=large'
 
 if [ $2 == '-s' ];then
 	for site in $(cat "$3");do
