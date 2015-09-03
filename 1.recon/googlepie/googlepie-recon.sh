@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ -z $1 ];then printf "\nSyntax $0 <domain> <-s sites.txt|-e extensions.txt|-q general query against the domain>\n\n"
+if [ -z $1 ];then printf "\nSyntax $0 <domain> <-s sites.txt|-e extensions.txt|-g bishopfox-google-queries.txt|-q general query against the domain>\n\n"
 	else
 
 domain="$1"
@@ -19,6 +19,16 @@ elif [ $2 == '-e' ];then
 		echo "##### https://www.google.com/search?q=site:$domain+ext:$ext&num=100&client=safari&rls=en&filter=0"
 		curl -A '' -H 'Accept:' -H 'Referrer: http://www.secureworks.com/' "http://ajax.googleapis.com/$url" 2>/dev/null | tr ',' '\n'|egrep '^"url|^"cacheUrl|^"title|^"content'|sed -e 's/^"url/^"url/g; s/\\u00/%/g; s/"//g; s/%26/&/g; s/%3[Ff]/?/g; s/%3[Dd]/=/g;'|tr '^' '\n'
 		sleep 7;
+	done
+
+elif [ $2 == '-g' ];then
+	echo "[!] Warning: This is going to take about 12 hours."
+	IFS=$'\n'; for dork in $(cat $3 | cut -d';' -f5 | LC_ALL='C' sort -u); do
+		encoded=$(echo "$dork" | php -r "echo urlencode(fgets(STDIN));"| sed 's/%0A//g');
+		url="$part&q=site:$domain+$encoded"
+		echo "##### https://www.google.com/search?q=site:$domain+$encoded&num=100&client=safari&rls=en&filter=0"
+		curl -A '' -H 'Accept:' -H 'Referrer: http://www.secureworks.com/' "http://ajax.googleapis.com/$url" 2>/dev/null | tr ',' '\n'|egrep '^"url|^"cacheUrl|^"title|^"content'|sed -e 's/^"url/^"url/g; s/\\u00/%/g; s/"//g; s/%26/&/g; s/%3[Ff]/?/g; s/%3[Dd]/=/g;'|tr '^' '\n'
+		sleep 27;
 	done
 
 elif [ $2 == '-q' ];then
