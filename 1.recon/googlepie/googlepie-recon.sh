@@ -40,8 +40,8 @@ elif [ $2 == '-e' ];then
 	done
 
 elif [ $2 == '-g' ];then
-	echo "[!] Warning: This is going to take about 12 hours."
-	IFS=$'\n'; for dork in $(cat $3 | cut -d';' -f5 | LC_ALL='C' sort -u); do
+	printf "[!]\n[!] Warning: This is going to take about 12 hours.\n[!]\n"
+	IFS=$'\n'; for dork in $(cat $3 | cut -d';' -f5 2>/dev/null | LC_ALL='C' sort -u); do
 		encoded=$(echo "$dork" | php -r "echo urlencode(fgets(STDIN));"| sed 's/%0A//g');
 		url="$part&q=site:$domain+$encoded"
 		echo "##### https://www.google.com/search?q=site:$domain+$encoded&num=100&client=safari&rls=en&filter=0"
