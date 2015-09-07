@@ -15,8 +15,7 @@ for i in xrange(0, len(list)):
 	method = list[i]
 	s = socket.socket()
 	s.connect((host, port))
-	# s.send('%s / HTTP/1.1\r\nHost: %s\r\n\r\n') % (method, host)
-	s.send(method + ' / HTTP/1.1\r\nHost: ' + host + '\r\n\r\n')
+	s.send('%s / HTTP/1.1\r\nHost: %s\r\n\r\n' % (method, host))
 	data = s.recv(1024)
 	s.close()
 	print '\r\n[+] %s got this response' % (method)
