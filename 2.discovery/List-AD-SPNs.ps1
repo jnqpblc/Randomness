@@ -17,8 +17,8 @@ $QUERY.Filter = $FILTER
 $RESULTS = $QUERY.FindAll()
 
 foreach ($RESULT in $RESULTS){
- $account = $RESULT.GetDirectoryEntry()
- foreach ($SPN in $account.servicePrincipalName.Value){
+ $ACCOUNT = $RESULT.GetDirectoryEntry()
+ foreach ($SPN in $ACCOUNT.servicePrincipalName.Value){
   if($SPN.contains("$serviceType/")){
    $SPNS[$("$SPN")]=1;
   }
