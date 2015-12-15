@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opml version="1.0">
+<head>
+<title>Vienna Subscriptions</title>
+<dateCreated>2015-12-15 10:55:06 -0600</dateCreated>
+</head>
+<body>
+<outline htmlUrl="https://adsecurity.org" xmlUrl="https://adsecurity.org/?feed=rss2" type="rss" description="Active Directory, Security, PowerShell, Tech Notes, &amp; Geek Trivia..." text="Active Directory Security"/>
+<outline htmlUrl="http://bernardodamele.blogspot.com/" xmlUrl="http://bernardodamele.blogspot.com/feeds/posts/default" type="rss" description="A weblog about me and my information technology thoughts" text="Bernardo Damele A. G."/>
+<outline htmlUrl="http://carnal0wnage.attackresearch.com/" xmlUrl="http://carnal0wnage.attackresearch.com/feeds/posts/default" type="rss" description="" text="Carnal0wnage &amp; Attack Research Blog"/>
+<outline htmlUrl="https://clymb3r.wordpress.com" xmlUrl="https://clymb3r.wordpress.com/feed/" type="rss" description="Hacking and general mayhem" text="clymb3r"/>
+<outline htmlUrl="https://blog.coresecurity.com" xmlUrl="https://blog.coresecurity.com/feed/" type="rss" description="" text="Core Security"/>
+<outline htmlUrl="https://enigma0x3.wordpress.com" xmlUrl="https://enigma0x3.wordpress.com/feed/" type="rss" description="Red Teamer and Security Addict" text="enigma0x3"/>
+<outline htmlUrl="http://www.exploit-monday.com/" xmlUrl="http://www.exploit-monday.com/feeds/posts/default" type="rss" description="Security Research and Esoteric PowerShell Knowledge" text="Exploit Monday"/>
+<outline htmlUrl="http://www.harmj0y.net/blog" xmlUrl="http://www.harmj0y.net/blog/feed/" type="rss" description="security at the misfortune of others" text="harmj0y"/>
+<outline htmlUrl="http://immunityproducts.blogspot.com/" xmlUrl="http://immunityproducts.blogspot.com/feeds/posts/default" type="rss" description="" text="Immunity Products"/>
+<outline htmlUrl="http://immunityservices.blogspot.com/" xmlUrl="http://immunityservices.blogspot.com/feeds/posts/default" type="rss" description="" text="Immunity Services"/>
+<outline htmlUrl="http://krebsonsecurity.com" xmlUrl="http://krebsonsecurity.com/feed/" type="rss" description="In-depth security news and investigation" text="Krebs on Security"/>
+<outline htmlUrl="https://blog.netspi.com" xmlUrl="https://blog.netspi.com/feed/" type="rss" description="" text="NetSPI Blog"/>
+<outline htmlUrl="http://obscuresecurity.blogspot.com/" xmlUrl="http://obscuresecurity.blogspot.com/feeds/posts/default" type="rss" description="Nothing new to see here." text="obscuresec"/>
+<outline htmlUrl="https://www.offensive-security.com" xmlUrl="https://www.offensive-security.com/feed/" type="rss" description="Leaders in Information Security Training" text="Offensive Security"/>
+<outline htmlUrl="http://blog.opensecurityresearch.com/" xmlUrl="http://blog.opensecurityresearch.com/feeds/posts/default" type="rss" description="Sponsored by &lt;a href=&quot;http://www.foundstone.com&quot;&gt;Foundstone&lt;/a&gt;" text="Open Security Research"/>
+<outline htmlUrl="http://redteamjournal.com" xmlUrl="http://feeds.feedburner.com/RedTeamJournal" type="rss" description="Red teaming and alternative analysis for national security and business advantage." text="RED TEAM JOURNAL"/>
+<outline htmlUrl="http://www.room362.com/" xmlUrl="http://www.room362.com/feeds/posts/default" type="rss" description="Blatherings of a security addict..." text="Room362"/>
+<outline htmlUrl="http://pen-testing.sans.org/blog" xmlUrl="https://pen-testing.sans.org/blog/pen-testing/feed/" type="rss" description="SANS Penetration Testing Blog" text="SANS Penetration Testing"/>
+<outline htmlUrl="http://www.darkoperator.com/" xmlUrl="http://www.darkoperator.com/blog?format=RSS" type="rss" description="Sharing my thoughts and idead." text="Shell is Only the Beginning"/>
+<outline htmlUrl="https://silentbreaksecurity.com" xmlUrl="https://silentbreaksecurity.com/blog/feed/" type="rss" description="" text="Silent Break Security"/>
+<outline htmlUrl="https://www.google.com" xmlUrl="https://www.google.com/alerts/feeds/01242606231180831183/4955589457654526152" type="rss" description="" text="site:github.com exploit"/>
+<outline htmlUrl="https://www.google.com" xmlUrl="https://www.google.com/alerts/feeds/01242606231180831183/7313731099655945811" type="rss" description="" text="site:phrack.org inurl:/papers/"/>
+<outline htmlUrl="http://passing-the-hash.blogspot.com/" xmlUrl="http://passing-the-hash.blogspot.com/feeds/posts/default" type="rss" description="Providing all the extra info that didn&apos;t make it into the BlackHat 2012 USA Presentation &quot;Still Passing the Hash 15 Years Later? Using the Keys to the Kingdom to Access All Your Data&quot; by Alva Lease &apos;Skip&apos; Duckwall IV and Christopher Campbell." text="Still Passing the Hash 15 Years Later"/>
+<outline htmlUrl="http://blog.cobaltstrike.com" xmlUrl="http://blog.cobaltstrike.com/feed/" type="rss" description="A blog about Armitage, Cobalt Strike, and Red Teaming" text="Strategic Cyber LLC"/>
+<outline htmlUrl="http://www.thegreycorner.com/" xmlUrl="http://www.thegreycorner.com/feeds/posts/default" type="rss" description="A blog focused on the related subjects of software exploitation, penetration testing and computer incident detection and response." text="The Grey Corner"/>
+<outline htmlUrl="http://www.troyhunt.com/" xmlUrl="http://www.troyhunt.com/feeds/posts/default" type="rss" description="Observations, musings and conjecture about the world of software and technology" text="Troy Hunt&apos;s Blog"/>
+<outline htmlUrl="http://www.verisgroup.com" xmlUrl="http://www.verisgroup.com/feed/" type="rss" description="Veris Group is an industry-leading, award-winning company providing a full spectrum of cybersecurity services to many of the world’s largest commercial and government organizations." text="Veris Group"/>
+</body>
+</opml>
