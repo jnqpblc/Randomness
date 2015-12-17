@@ -67,8 +67,7 @@ class Module(BaseModule, GoogleWebMixin):
         # use BishopFox's ghdb list if the option is set
         if self.options['bishopfox'] and os.path.exists(self.options['bishopfox']):
             with open(self.options['bishopfox']) as fp:
-                #bishopfox = [x.strip().split(';')[4] for x in fp.readlines()]
-                bishopfox = [x.strip() for x in fp.readlines()]
+                bishopfox = [x.strip().split(';')[4] for x in fp.readlines()]
                 for domain in domains:
                     self.heading(domain, level=0)
                     base_query = 'site:%s' % (domain)
