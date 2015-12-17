@@ -4,20 +4,14 @@ cp sites.txt ~/recon-ng/data/grecce_sites.txt
 cp extentions.txt ~/recon-ng/data/grecce_extentions.txt
 cp bishopfox-google-queries.txt ~/recon-ng/data/grecce_bishopfox.txt
 
-$ python recon-ng -w test-google-recon -f ~/grecce_sites.rc
+echo 'set DEBUG False
+set VERBOSE True
 set USER-AGENT Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:42.0) Gecko/20100101 Firefox/42.0
 use recon/domains-vulnerabilities/grecce
 set SITES data/grecce_sites.txt
-run
-
-$ python recon-ng -w test-google-recon -f ~/grecce_exts.rc
-set USER-AGENT Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:42.0) Gecko/20100101 Firefox/42.0
-use recon/domains-vulnerabilities/grecce
 set EXTENTIONS data/grecce_extentions.txt
-run
-
-$ python recon-ng -w test-google-recon -f ~/grecce_bishop.rc
-set USER-AGENT Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:42.0) Gecko/20100101 Firefox/42.0
-use recon/domains-vulnerabilities/grecce
 set BISHOPFOX data/grecce_bishopfox.txt
-run
+run' > /tmp/grecce.rc
+
+$ python recon-ng -w {CLIENT}
+resource /tmp/grecce.rc
