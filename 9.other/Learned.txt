@@ -1,0 +1,11 @@
+
+This is CS50 2014.
+by Harvard University
+Course Description
+Introduction to the intellectual enterprises of computer science and the art of programming.
+This course teaches students how to think algorithmically and solve problems efficiently.
+Languages include C, PHP, and JavaScript plus SQL, CSS, and HTML.
+Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming.
+Designed for majors and non-majors alike, with or without prior programming experience.
+https://itunes.apple.com/us/course/this-is-cs50-2014./id953585749
+
