@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-# sudo pip install pcapy PyDNET graphillion networkx python-yaml;
+# sudo pip install pcapy graphillion networkx pyyaml; sudo port install py-libdnet libdnet
 #
 import sys
 if len(sys.argv) < 2:
