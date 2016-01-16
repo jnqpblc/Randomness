@@ -16,7 +16,9 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
+#
+# sudo pip install pcapy PyDNET graphillion networkx python-yaml;
+#
 import sys
 if len(sys.argv) < 2:
     sys.exit('\nUsage: %s <192.168.1.53|192.168.1.50-60|192.168.1.0/24>\n' % sys.argv[0])
