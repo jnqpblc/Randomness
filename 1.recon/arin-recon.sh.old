@@ -1,0 +1,32 @@
+#!/bin/bash
+if [ -z $1 ];then printf "\nSyntax: $0 <'query'|'example*'|'example*limited*'|'*example*'>\n\n"
+	else
+query=$1
+echo "# Use CTRL+K to remove any organizations that are not in-scope." > /tmp/arin-orgs.tmp
+curl "http://whois.arin.net/rest/orgs;name=$query" 2>/dev/null | egrep -o 'handle="[^"]*" name="[^"]*"' >> /tmp/arin-orgs.tmp
+nano /tmp/arin-orgs.tmp
+
+for organization in $(egrep -o 'handle="[A-Z0-9-]{2,14}"' /tmp/arin-orgs.tmp | awk -F'"' '{print $2}' | sort -u); do
+	for netblock in $(curl "http://whois.arin.net/rest/org/$organization/nets" 2>/dev/null | egrep -o 'NET-[0-9]{1,3}-[0-9]{1,3}-[0-9]{1,3}-[0-9]{1,3}-[0-9]' | sort -u); do
+		echo "### ORG: $organization - $netblock:"; sleep .3;
+		curl "http://whois.arin.net/rest/net/$netblock.txt" 2>/dev/null | egrep 'NetRange|CIDR|NetName|NetHandle|Customer|RegDate';
+		echo ""
+	done
+done | tee /tmp/arin.tmp
+
+echo "# Use CTRL+X to remove any customers that are not in-scope." > /tmp/arin-custs.tmp
+curl "http://whois.arin.net/rest/customers;name=$query" 2>/dev/null | egrep -o 'handle="[^"]*" name="[^"]*"' >> /tmp/arin-custs.tmp
+nano /tmp/arin-custs.tmp
+for customer in $(egrep -o 'handle="[A-Z0-9-]{2,14}"' /tmp/arin-custs.tmp | awk -F'"' '{print $2}' | sort -u); do
+	for netblock in $(curl "http://whois.arin.net/rest/customer/$customer/nets" 2>/dev/null | egrep -o 'NET-[0-9]{1,3}-[0-9]{1,3}-[0-9]{1,3}-[0-9]{1,3}-[0-9]' | sort -u); do
+		echo "### CUST: $customer - $netblock:"; sleep .3;
+		curl "http://whois.arin.net/rest/net/$netblock.txt" 2>/dev/null | egrep 'NetRange|CIDR|NetName|NetHandle|Customer|RegDate';
+		echo ""
+	done
+done | tee -a /tmp/arin.tmp
+
+grep CIDR /tmp/arin.tmp | sed 's/CIDR: *//g; s/^ *//g; s/^[^0-9\.]//g;' | tr ',' '\n' | sort -u
+printf 'No. of CIDRs: '; grep CIDR /tmp/arin.tmp | sed 's/CIDR: *//g; s/^ *//g;' | tr ',' '\n' | sort -u | wc -l
+rm -f /tmp/arin.tmp; rm -f /tmp/arin-orgs.tmp; rm -f /tmp/arin-custs.tmp;
+
+fi
