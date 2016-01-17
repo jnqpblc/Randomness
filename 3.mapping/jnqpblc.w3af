@@ -16,13 +16,17 @@ back
 plugins
 
 # Configure OUTPUT
-output console,text_file,html_file
+output console,text_file,html_file,xml_file
 output config text_file
-set output_file ~/{CLIENT}/w3af-output-{TARGET}-{PORT}.txt
+set output_file ~/{CLIENT}/w3af-output-{TARGET}-{PORT}-{PROTO}.txt
 set verbose True
 back
-output config html_file
-set output_file ~/{CLIENT}/w3af-output-{TARGET}-{PORT}.html
+#output config html_file
+#set output_file ~/{CLIENT}/w3af-output-{TARGET}-{PORT}-{PROTO}.html
+#set verbose True
+#back
+output config xml_file
+set output_file ~/{CLIENT}/w3af-output-{TARGET}-{PORT}-{PROTO}.xml
 set verbose True
 back
 output config console
