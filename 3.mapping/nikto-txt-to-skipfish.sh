@@ -26,7 +26,7 @@ for TARGET in $(grep -l 'Target IP' ~/$CLIENT/nikto-output-*.txt|sort -u|awk -F-
       fi
       skipfish -b i -X $URI_TO_IGNORE -Z -o $REPORT_DIR -M -Q -S $SUPP_DICT -W $CUSTOM_DICT -Y -R 5 -G 256 -l 3 -g 10 -m 10 -f 20 -t 60 -w 60 -i 60 -s 1024000 -e $TARGET_URL
    else
-	echo "Dammit Bobby. $target is a failure."
+	echo "Dammit Bobby. $TARGET is a failure."
    fi
    done
 fi
