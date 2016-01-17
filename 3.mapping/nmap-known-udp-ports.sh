@@ -6,6 +6,6 @@ ls "$CLIENT" > /dev/null 2>&1; if [ $? -ne '0' ];then printf "\nPlease create a 
 	else
 	SCRIPTS=$(grep portrule $DIR*.nse|grep '"udp"'|cut -d':' -f1|tr '/' '\n'|grep '\.nse'|sed 's/^/+/g;'| sed ':a;N;$!ba;s/\n/,/g; s/,$//g; s/\.nse//g;');
 	PORTS=$(grep portrule $DIR*.nse|grep '"udp"'|sed 's/[^0-9a-zA-Z]/\n/g'|egrep -o '^[0-9]{1,5}'|sort -uR|sed ':a;N;$!ba;s/\n/,/g; s/,$//g;');
-	sudo nmap -PN -sU --version-light -p $PORTS --open --script $SCRIPTS -oA $CLIENT/nmap-known-udp-ports -iL $FILE
+	sudo ~/nmap/nmap -PN -sU --version-light -p $PORTS --open --script $SCRIPTS -oA $CLIENT/nmap-known-udp-ports -iL $FILE
 	fi
 fi
