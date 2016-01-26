@@ -1,5 +1,24 @@
 
-This is CS50 2014.
+# Free Sources:
+- Youtube:
+https://www.youtube.com/user/DEFCONConference/playlists
+https://www.youtube.com/user/BlackHatOfficialYT/playlists
+https://www.youtube.com/user/ChRiStIaAn008/playlists
+https://www.youtube.com/user/irongeek/playlists
+
+- iTunesU:
+http://www.harvard.edu/itunes
+http://itunes.stanford.edu/
+http://web.mit.edu/itunesu/
+
+- Internet
+https://www.coursera.org/
+https://www.librivox.org/
+http://www.gutenberg.org/
+http://www.learnoutloud.com/
+
+# Worthwhile:
+- This is CS50 2014.
 by Harvard University
 Course Description
 Introduction to the intellectual enterprises of computer science and the art of programming.
@@ -9,3 +28,5 @@ Problem sets inspired by real-world domains of biology, cryptography, finance, f
 Designed for majors and non-majors alike, with or without prior programming experience.
 https://itunes.apple.com/us/course/this-is-cs50-2014./id953585749
 
+- DEF CON 22 - Brady Bloxham - Getting Windows to Play with Itself
+https://www.youtube.com/watch?v=dq2Hv7J9fvk
