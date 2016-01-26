@@ -12,7 +12,11 @@ http://itunes.stanford.edu/
 http://web.mit.edu/itunesu/
 
 - Internet
+http://opensecuritytraining.info/Training.html
+http://www.cs.fsu.edu/~redwood/OffensiveComputerSecurity/
 https://www.coursera.org/
+
+- Audiobooks
 https://www.librivox.org/
 http://www.gutenberg.org/
 http://www.learnoutloud.com/
