@@ -1,0 +1,87 @@
+Responder.py capture netlm/netntlmv1/netntlmv2 hash.
+Recover password from hash.
+Test recovered username/password combination on source computer for Local Administrative rights.
+
+1.
+Run Procdump.exe from a share to to dump lsass.exe process memory to the same share.
+Run Reg.exe and dump the System/Security/Sam registry hives to a share.
+Use Mimikatz.exe in offline mode on the lsass.exe memory dump to extract clear-text passwords.
+Use creddump7 to extract password from the local Sam database, Cached credentials and LSA Secrets for service passwords.
+
+1a.
+Use net commands to enumerate Active Directory.
+Recover password for any Domain Admins accounts found within the Cached credentials or Mimikatz dump.
+Steal a copy of the NTDS.dit using Vssadmin.exe and extract all password hashes.
+Recover all passwords from the NTDS hashes.
+
+1b.
+Use Windows VM and any recovered username/password combination to attach ADUC to AD.
+Look for User to Group to Server permission paths.
+Look for central administration or jump boxes.
+Test recovered username/password combination on source computer for Local Administrative rights.
+
+1b1.
+Run Procdump.exe from a share to to dump lsass.exe process memory to the same share.
+Run Reg.exe and dump the System/Security/Sam registry hives to a share.
+Use Mimikatz.exe in offline mode on the lsass.exe memory dump to extract clear-text passwords.
+Use creddump7 to extract password from the local Sam database, Cached credentials and LSA Secrets for service passwords.
+
+1c.
+Use Windows VM and any recovered username/password combination to runas /netonly cmd.exe
+Use List-AD-SPNs.ps1 to find open services within AD.
+Use powerview.ps1 to enumerate and search AD.
+Use powerview.ps1 to hunt for Local Administrative rights.
+
+1c1.
+Test all recovered username/password combinations for access to any SQL Databases found from SPNs.
+
+1d.
+Test all recovered username/password combinations for access to RDP on every server.
+Use PowerUp.ps1 to enumerate privesc opportunities.
+
+1e.
+Test all recovered username/password combinations for access to external VPN and Wifi.
+
+2.
+Mount SYSVOL to /mnt/sysvol using recovered username/password combination.
+Use grep to search for cpassword within xml based group policy preference files.
+Use find to enumerate all .bat/.cmd/.vbs/.ps1 file extensions.
+
+3.
+Mount Users network share or home folder to /mnt/users/username.
+Use find to enumerate all folders and files looking for documents containing passwords or password databases.
+
+GUI: Open any folder on linux and press Ctrl+L, then enter "smb://{IP}/{SHARE}"
+
+4.
+Find internal Outlook Web Access and use the recovered username/password combination.
+Search for additional passwords and other internal resources such as a wiki/portal/intranet.
+
+5.
+Use nmap or metasploit to search for network shares.
+Test all recovered username/password combinations read-access.
+Use find to enumerate all folders and files looking for documents containing passwords or password databases.
+
+#nmap -PN -sT -p 445 --open --script +smb-enum-shares -iL computers-from-ad
+#nmap -PN -sT -p 445 --open --script +smb-enum-shares --script-args=smbusername={USERNAME},smbpassword='{PASSWORD}' -iL computers-from-ad
+#nmap -PN -sT -p 445 --open --script +smb-enum-shares --script-args=smbdomain={DOMAIN},smbusername={USERNAME},smbpassword='{PASSWORD}' -iL computers-from-ad
+#nmap -PN -sT -p 445 --open --script +smb-enum-shares --script-args=smbusername={USERNAME},smbhash={NTHASH} -iL computers-from-ad
+#nmap -PN -sT -p 445 --open --script +smb-enum-shares --script-args=smbdomain={DOMAIN},smbusername={USERNAME},smbhash={NTHASH} -iL computers-from-ad
+
+GUI: Open any folder on linux and press Ctrl+L, then enter "smb://{IP}/{SHARE}". Once complete, select the File menu and click unmount.
+# apt-get install cifs-utils
+CLI FS: mount //{IP}/{SHARE} -o username=guest,password=guest /mnt/netshare
+CLI FS: mount //{IP}/{SHARE} -o doamin={DOMAIN},username={USERNAME},password={PASSWORD} /mnt/netshare
+CLI: smbclient -U guest -N \\\\{IP}\\{SHARE}
+CLI: smbclient -W {DOMAIN} -U {USERNAME} -P '{PASSWORD}' \\\\{IP}\\{SHARE}
+
+stat <filename>: A combined output of getfacl and allinfo
+getfacl <filename>: Lists the files acl or permissions.
+allinfo <filename>: Lists the files MACE timestamps.
+
+Download all files
+	recurse on
+	prompt off
+    lcd '~/path/to/download/to/'
+    mget *
+
