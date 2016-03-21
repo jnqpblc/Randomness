@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ -z $1 ];then printf "\nSyntax: $0 <list|read|all> <optional|preference name|read only>\n\n"
+if [ -z $1 ];then printf "\nSyntax: $0 <list|read|all|full> <optional|preference name|read only>\n\n"
 	else
 	if [ $1 == 'list' ];then
 		find /Library/Preferences -type f -name '*.plist'|cut -d'/' -f4|grep '\.plist'
@@ -14,6 +14,12 @@ if [ -z $1 ];then printf "\nSyntax: $0 <list|read|all> <optional|preference name
 		for PREF in $(find /Library/Preferences -type f -name '*.plist'|cut -d'/' -f4|grep '\.plist'); do
 			echo "$(hostname):$PWD $USER# bash osx-pref-reader.sh read $PREF"; defaults read /Library/Preferences/$PREF; printf '\n\n';
 		done | less
+        elif [ $1 == 'full' ];then
+		IFS=$'\n';
+		for PREF in $(find /Library -type f -name '*.plist'); do
+			echo "$(hostname):$PWD $USER# defaults read $PREF"; defaults read "$PREF"; printf '\n\n';
+		done | less
+
 	else
 		echo 'Dammit Bobby. list or read options only.'
 	fi
