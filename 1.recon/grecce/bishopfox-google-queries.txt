@@ -1626,7 +1626,7 @@ GHDBReborn;;Advisories and Vulnerabilities;;& Spider Friendly by Crack
 GHDBReborn;;Advisories and Vulnerabilities;;(C) by CyberTeddy
 GHDBReborn;;Advisories and Vulnerabilities;;(c) SriptBux 2008 | Powered By ScriptBux version 2.50 beta 1
 GHDBReborn;;Advisories and Vulnerabilities;;(C) This site is NITROpowered!
-GHDBReborn;;Advisories and Vulnerabilities;;(This Dragonflyô installation was | Thanks for downloading Dragonfly) -inurl:demo -inurl:cpgnuke.com
+GHDBReborn;;Advisories and Vulnerabilities;;(This Dragonfly™ installation was | Thanks for downloading Dragonfly) -inurl:demo -inurl:cpgnuke.com
 GHDBReborn;;Advisories and Vulnerabilities;;/index.php?id=cmp-noticias
 GHDBReborn;;Advisories and Vulnerabilities;;/index.php?option=com_restaurante
 GHDBReborn;;Advisories and Vulnerabilities;;/modules/amevents/print.php?id=
@@ -1969,7 +1969,7 @@ GHDBReborn;;Advisories and Vulnerabilities;;intext: Copyright+MantisBT Group
 GHDBReborn;;Advisories and Vulnerabilities;;intext: Powered by Marinet
 GHDBReborn;;Advisories and Vulnerabilities;;intext: Site developed & mantained by Woodall Creative Group
 GHDBReborn;;Advisories and Vulnerabilities;;intext: Website Design and Hosting By Netricks, Inc.
-GHDBReborn;;Advisories and Vulnerabilities;;intext:(UBB.threadsô 6.2|UBB.threadsô 6.3) intext:You * not logged * -site:ubbcentral.com
+GHDBReborn;;Advisories and Vulnerabilities;;intext:(UBB.threads™ 6.2|UBB.threads™ 6.3) intext:You * not logged * -site:ubbcentral.com
 GHDBReborn;;Advisories and Vulnerabilities;;intext:? Tainos Webdesign
 GHDBReborn;;Advisories and Vulnerabilities;;intext:?2003-2008 RC v3.1 Developed by: GA Soft
 GHDBReborn;;Advisories and Vulnerabilities;;intext:2000-2001 The phpHeaven Team
@@ -2037,7 +2037,7 @@ GHDBReborn;;Advisories and Vulnerabilities;;intext:Web Design by Webz filetype:a
 GHDBReborn;;Advisories and Vulnerabilities;;intitle: phpBazar-AdminPanel
 GHDBReborn;;Advisories and Vulnerabilities;;intitle:Answer Builder  Ask a question
 GHDBReborn;;Advisories and Vulnerabilities;;intitle:ASP inline corporate calendar   inurl:.asp?id=
-GHDBReborn;;Advisories and Vulnerabilities;;intitle:b2evo installer intext:Installer f¸r Version
+GHDBReborn;;Advisories and Vulnerabilities;;intitle:b2evo installer intext:Installer für Version
 GHDBReborn;;Advisories and Vulnerabilities;;intitle:Bilder Galerie 1.1 or intitle:Bilder Galerie
 GHDBReborn;;Advisories and Vulnerabilities;;intitle:CCMS v3.1 Demo PW
 GHDBReborn;;Advisories and Vulnerabilities;;intitle:Directory Listing For / + inurl:webdav tomcat
@@ -2800,7 +2800,7 @@ GHDBReborn;;Advisories and Vulnerabilities;;Powered By Gravity Board X v2.0 BETA
 GHDBReborn;;Advisories and Vulnerabilities;;Powered by Gravy Media
 GHDBReborn;;Advisories and Vulnerabilities;;Powered by Grayscale Blog
 GHDBReborn;;Advisories and Vulnerabilities;;powered by guestbook script
-GHDBReborn;;Advisories and Vulnerabilities;;powered by GuppY v4|Site crÈÈ avec GuppY v4
+GHDBReborn;;Advisories and Vulnerabilities;;powered by GuppY v4|Site créé avec GuppY v4
 GHDBReborn;;Advisories and Vulnerabilities;;Powered by Guruscript.com
 GHDBReborn;;Advisories and Vulnerabilities;;Powered By HASHE
 GHDBReborn;;Advisories and Vulnerabilities;;Powered by How2asp
@@ -3343,7 +3343,7 @@ GHDBReborn;;Files containing passwords;;filetype:ini FtpInBackground (pass|passw
 GHDBReborn;;Files containing passwords;;filetype:ini pdo_mysql (pass|passwd|password|pwd)
 GHDBReborn;;Files containing passwords;;filetype:ini precurio (pass|passwd|password|pwd)
 GHDBReborn;;Files containing passwords;;filetype:ini SavedPasswords (pass|passwd|password|pwd)
-GHDBReborn;;Files containing passwords;;filetype:reg reg +intext:îWINVNC3î
+GHDBReborn;;Files containing passwords;;filetype:reg reg +intext:”WINVNC3”
 GHDBReborn;;Files containing passwords;;filetype:sql (&quot;passwd values&quot; | &quot;password values&quot; | &quot;pass values&quot; )
 GHDBReborn;;Files containing passwords;;filetype:sql MySQL dump (pass|password|passwd|pwd)
 GHDBReborn;;Files containing passwords;;filetype:sql phpmyAdmin SQL Dump (pass|password|passwd|pwd)
@@ -3373,7 +3373,7 @@ GHDBReborn;;Files containing passwords;;trillian.ini
 GHDBReborn;;Files containing usernames;;bash_history files
 GHDBReborn;;Files containing usernames;;OWA Public folders & Address book
 GHDBReborn;;Files containing usernames;;sh_history files
-GHDBReborn;;Footholds;;(intitle:WordPress õ Setup Configuration File)|(inurl:setup-config.php?step=)
+GHDBReborn;;Footholds;;(intitle:WordPress › Setup Configuration File)|(inurl:setup-config.php?step=)
 GHDBReborn;;Footholds;;allintext:fs-admin.php
 GHDBReborn;;Footholds;;PHP Shell (unprotected)
 GHDBReborn;;Footholds;;Public PHP FileManagers
@@ -3393,7 +3393,7 @@ GHDBReborn;;Pages containing login portals;;intitle:cascade server inurl:login.a
 GHDBReborn;;Pages containing login portals;;intitle:communigate pro * * intitle:entrance
 GHDBReborn;;Pages containing login portals;;intitle:cyber recruiter User ID
 GHDBReborn;;Pages containing login portals;;intitle:Enabling Self-Service Procurement
-GHDBReborn;;Pages containing login portals;;intitle:endymion.sakÈ.mail.login.page | inurl:sake.servlet
+GHDBReborn;;Pages containing login portals;;intitle:endymion.saké.mail.login.page | inurl:sake.servlet
 GHDBReborn;;Pages containing login portals;;intitle:Icecast Administration Admin Page
 GHDBReborn;;Pages containing login portals;;intitle:Login - powered by Easy File Sharing Web Server
 GHDBReborn;;Pages containing login portals;;intitle:Login intext:RT is © Copyright
@@ -3402,7 +3402,7 @@ GHDBReborn;;Pages containing login portals;;intitle:WorldClient intext:© (2003|
 GHDBReborn;;Pages containing login portals;;inurl:/dana-na/auth/
 GHDBReborn;;Pages containing login portals;;inurl:2000 intitle:RemotelyAnywhere -site:realvnc.com
 GHDBReborn;;Pages containing login portals;;inurl:src/login.php
-GHDBReborn;;Pages containing login portals;;Login (Powered by Jetbox One CMS ô | Powered by Jetstream © *)
+GHDBReborn;;Pages containing login portals;;Login (Powered by Jetbox One CMS ™ | Powered by Jetstream © *)
 GHDBReborn;;Pages containing login portals;;Login Name Repository Webtop intitle:login
 GHDBReborn;;Pages containing login portals;;Outlook Web Access (a better way)
 GHDBReborn;;Pages containing login portals;;PhotoPost PHP Upload
@@ -3465,8 +3465,8 @@ GHDBReborn;;Various Online Devices;;To view the Web interface of the SpeedTouch,
 GHDBReborn;;Various Online Devices;;Winamp Web Interface
 GHDBReborn;;Various Online Devices;;Xerox Phaser 6250
 GHDBReborn;;Various Online Devices;;Xerox Phaser 8200
-GHDBReborn;;Various Online Devices;;Xerox PhaserÆ 740 Color Printer
-GHDBReborn;;Various Online Devices;;Xerox PhaserÆ 840 Color Printer
+GHDBReborn;;Various Online Devices;;Xerox Phaser® 740 Color Printer
+GHDBReborn;;Various Online Devices;;Xerox Phaser® 840 Color Printer
 GHDBReborn;;Vulnerable Files;;allinurl:forcedownload.php?file=
 GHDBReborn;;Vulnerable Files;;ext:asp inurl:DUgallery intitle:3.0 -site:dugallery.com -site:duware.com
 GHDBReborn;;Vulnerable Files;;ext:cgi inurl:ubb6_test
@@ -3922,7 +3922,7 @@ SLDB;;Custom;;filetype:r2w r2w
 SLDB;;Custom;;filetype:rdp rdp
 SLDB;;Custom;;filetype:reg "Terminal Server Client"
 SLDB;;Custom;;filetype:reg reg +intext:"defaultusername" +intext:"defaultpassword"
-SLDB;;Custom;;filetype:reg reg +intext:‚? WINVNC3‚?
+SLDB;;Custom;;filetype:reg reg +intext:â? WINVNC3â?
 SLDB;;Custom;;filetype:reg reg HKEY_CURRENT_USER SSHHOSTKEYS
 SLDB;;Custom;;filetype:sql "insert into" (pass|passwd|password)
 SLDB;;Custom;;filetype:sql ("values * MD5" | "values * password" | "values * encrypt")
@@ -4306,7 +4306,7 @@ SLDB;;Custom;;inurl:yapboz_detay.asp + View Webcam User Accessing
 SLDB;;Custom;;inurl:zebra.conf intext:password -sample -test -tutorial -download
 SLDB;;Custom;;ipsec.conf
 SLDB;;Custom;;ipsec.secrets
-SLDB;;Custom;;Jetbox One CMS ‚?¢" | "
+SLDB;;Custom;;Jetbox One CMS â?¢" | "
 SLDB;;Custom;;Jetstream ? *")
 SLDB;;Custom;;LeapFTP intitle:"index.of./" sites.ini modified
 SLDB;;Custom;;Link Department"
@@ -4427,10 +4427,10 @@ SLDBNEW;;Info Disclosure;;ext:sql hotmail gmail password
 SLDBNEW;;Joomla Backups and MD5 Passwds;;ext:sql jos_users
 SLDBNEW;;Joomla Backups and MD5 Passwds;;ext:sql jos_users md5(
 SLDBNEW;;OBIEE Creds in URL;;inurl:nquser * nqpassword
-SLDBNEW;;Passwords in Different Languages;;intext:gmail intext:"parola díaccesso" (ext:csv | ext:xls | ext:txt | ext:sql)
+SLDBNEW;;Passwords in Different Languages;;intext:gmail intext:"parola d’accesso" (ext:csv | ext:xls | ext:txt | ext:sql)
 SLDBNEW;;Passwords in Different Languages;;intext:gmail intext:hotmail intext:"mot de passe" (ext:csv | ext:xls | ext:txt | ext:sql)
 SLDBNEW;;Passwords in Different Languages;;intext:gmail intext:hotmail intext:"Paswoord" (ext:csv | ext:xls | ext:txt | ext:sql)
-SLDBNEW;;Passwords in Different Languages;;intext:gmail intext:hotmail intext:contraseÒa (ext:csv | ext:xls | ext:txt | ext:sql)
+SLDBNEW;;Passwords in Different Languages;;intext:gmail intext:hotmail intext:contraseña (ext:csv | ext:xls | ext:txt | ext:sql)
 SLDBNEW;;Passwords in Different Languages;;intext:gmail intext:hotmail intext:Kennwort (ext:csv | ext:xls | ext:txt | ext:sql)
 SLDBNEW;;Passwords in Different Languages;;intext:gmail intext:hotmail intext:senha (ext:csv | ext:xls | ext:txt | ext:sql)
 SLDBNEW;;PasteBin Fun;;site:paste-it.net visa
