@@ -1,5 +1,5 @@
 <ruby>
 dir["*.rc"].each do |script|
-  self."run"_single("resource #{script}")
+  self.run_single("resource #{script}")
 end
 </ruby>
