@@ -1,0 +1,13 @@
+use auxiliary/scanner/http/ssl_version
+
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.name == "https" || service.name == "ssl/http"
+      self."run"_single("set RHOSTS #{host.address}")
+      self."run"_single("set RPORT #{service.port}")
+      self."run"_single("run")
+    end
+  end
+end
+</ruby>
