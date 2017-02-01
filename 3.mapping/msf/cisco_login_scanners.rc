@@ -1,0 +1,129 @@
+use auxiliary/scanner/telnet/telnet_login
+set USER_FILE /opt/metasploit/apps/pro/data/wordlists/telnet_cisco_default_user.txt
+set PASS_FILE /opt/metasploit/apps/pro/data/wordlists/telnet_cisco_default_pass.txt
+set BLANK_PASSWORDS true
+set USER_AS_PASS true
+set VERBOSE false 
+
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.info =~ /cisco/i and service.name == "telnet"
+      self.run_single("set RHOSTS #{host.address}")
+      self.run_single("set RPORT #{service.port}")
+      self.run_single("run")
+    end
+  end
+end
+</ruby>
+
+use auxiliary/scanner/ssh/ssh_login
+set USER_FILE /opt/metasploit/apps/pro/data/wordlists/telnet_cisco_default_user.txt
+set PASS_FILE /opt/metasploit/apps/pro/data/wordlists/telnet_cisco_default_pass.txt
+set BLANK_PASSWORDS true
+set USER_AS_PASS true
+set VERBOSE false 
+
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.info =~ /cisco/i and service.name == "ssh"
+      self.run_single("set RHOSTS #{host.address}")
+      self.run_single("set RPORT #{service.port}")
+      self.run_single("run")
+    end
+  end
+end
+</ruby>
+
+use auxiliary/scanner/http/cisco_asa_asdm
+set USER_FILE /opt/metasploit/apps/pro/data/wordlists/telnet_cisco_default_user.txt
+set PASS_FILE /opt/metasploit/apps/pro/data/wordlists/telnet_cisco_default_pass.txt
+set BLANK_PASSWORDS true
+set USER_AS_PASS true
+set VERBOSE false 
+unset USERNAME
+unset PASSWORD
+
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.info =~ /cisco/i and service.name == "https"
+      self.run_single("set RHOSTS #{host.address}")
+      self.run_single("set RPORT #{service.port}")
+      self.run_single("run")
+    end
+  end
+end
+</ruby>
+
+use auxiliary/scanner/http/cisco_ios_auth_bypass
+set SSL false
+
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.info =~ /cisco/i and service.name == "http"
+      self.run_single("set RHOSTS #{host.address}")
+      self.run_single("set RPORT #{service.port}")
+      self.run_single("run")
+    end
+  end
+end
+</ruby>
+
+set SSL true
+
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.info =~ /cisco/i and service.name == "https"
+      self.run_single("set RHOSTS #{host.address}")
+      self.run_single("set RPORT #{service.port}")
+      self.run_single("run")
+    end
+  end
+end
+</ruby>
+
+use auxiliary/scanner/http/cisco_ssl_vpn
+set USER_FILE /opt/metasploit/apps/pro/data/wordlists/telnet_cisco_default_user.txt
+set PASS_FILE /opt/metasploit/apps/pro/data/wordlists/telnet_cisco_default_pass.txt
+set BLANK_PASSWORDS true
+set USER_AS_PASS true
+set VERBOSE false 
+unset USERNAME
+unset PASSWORD
+
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.info =~ /cisco/i and service.name == "https"
+      self.run_single("set RHOSTS #{host.address}")
+      self.run_single("set RPORT #{service.port}")
+      self.run_single("run")
+    end
+  end
+end
+</ruby>
+
+use auxiliary/scanner/http/http_login
+set USER_FILE /opt/metasploit/apps/pro/data/wordlists/telnet_cisco_default_user.txt
+set PASS_FILE /opt/metasploit/apps/pro/data/wordlists/telnet_cisco_default_pass.txt
+set BLANK_PASSWORDS true
+set USER_AS_PASS true
+set VERBOSE false 
+unset USERNAME
+unset PASSWORD
+
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.info =~ /cisco/i and service.name == "http"
+      self.run_single("set RHOSTS #{host.address}")
+      self.run_single("set RPORT #{service.port}")
+      self.run_single("run")
+    end
+  end
+end
+</ruby>
