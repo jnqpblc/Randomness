@@ -1,0 +1,12 @@
+use auxiliary/scanner/ipmi/ipmi_version
+set RPORT 623
+
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+      self."run"_single("set RHOSTS #{host.address}")
+      self."run"_single("run")
+    end
+  end
+end
+</ruby>
