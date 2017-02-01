@@ -4,8 +4,8 @@ set RPORT 623
 <ruby>
 framework.db.hosts.each do |host|
   host.services.each do |service|
-      self."run"_single("set RHOSTS #{host.address}")
-      self."run"_single("run")
+      self.run_single("set RHOSTS #{host.address}")
+      self.run_single("run")
     end
   end
 end
