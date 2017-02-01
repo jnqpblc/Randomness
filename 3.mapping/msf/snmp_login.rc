@@ -14,7 +14,7 @@ list=[
 ]
 framework.db.hosts.each do |host|
   host.services.each do |service|
-    if service.port == 161
+    if service.port == 161 && service.proto == "udp"
       self.run_single("set RHOSTS #{host.address}")
       self.run_single("set RPORT #{service.port}")
       list.each do |wordlist|
