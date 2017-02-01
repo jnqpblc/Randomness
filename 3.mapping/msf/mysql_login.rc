@@ -1,0 +1,17 @@
+use auxiliary/scanner/mysql/mysql_login
+set BLANK_PASSWORDS true
+set USER_AS_PASS true
+set VERBOSE false
+set USER_FILE /usr/share/metasploit-framework/data/wordlists/unix_users.txt
+
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.name == "mysql"
+      self.run_single("set RHOSTS #{host.address}")
+      self.run_single("set RPORT #{service.port}")
+      self.run_single("run")
+    end
+  end
+end
+</ruby>
