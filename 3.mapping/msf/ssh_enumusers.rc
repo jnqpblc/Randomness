@@ -1,0 +1,14 @@
+use auxiliary/scanner/ssh/ssh_enumusers
+set USER_FILE /usr/share/metasploit-framework/data/wordlists/unix_users.txt
+
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.name == "ssh"
+      self.run_single("set RHOSTS #{host.address}")
+      self.run_single("set RPORT #{service.port}")
+      self.run_single("run")
+    end
+  end
+end
+</ruby>
