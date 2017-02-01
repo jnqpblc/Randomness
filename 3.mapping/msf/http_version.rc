@@ -18,7 +18,7 @@ set SSL true
 <ruby>
 framework.db.hosts.each do |host|
   host.services.each do |service|
-    if     if service.proto == "tcp" && service.info = nil && service.name != "www" && service.name != "http"
+    if service.proto == "tcp" && service.info = nil && service.name != "www" && service.name != "http"
       self.run_single("set RHOSTS #{host.address}")
       self.run_single("set RPORT #{service.port}")
       self.run_single("run")
