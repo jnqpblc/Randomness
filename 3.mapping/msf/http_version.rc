@@ -4,7 +4,7 @@ set SSL false
 <ruby>
 framework.db.hosts.each do |host|
   host.services.each do |service|
-    if service.proto == "tcp" && service.info is nil
+    if service.proto == "tcp" && service.info = nil
       self.run_single("set RHOSTS #{host.address}")
       self.run_single("set RPORT #{service.port}")
       self.run_single("run")
@@ -18,7 +18,7 @@ set SSL true
 <ruby>
 framework.db.hosts.each do |host|
   host.services.each do |service|
-    if     if service.proto == "tcp" && service.info is nil && service.name != "www" && service.name != "http"
+    if     if service.proto == "tcp" && service.info = nil && service.name != "www" && service.name != "http"
       self.run_single("set RHOSTS #{host.address}")
       self.run_single("set RPORT #{service.port}")
       self.run_single("run")
