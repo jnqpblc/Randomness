@@ -3,7 +3,7 @@ use auxiliary/scanner/ssl/openssl_heartbleed
 <ruby>
 framework.db.hosts.each do |host|
   host.services.each do |service|
-    if service.name != "http" or service.name != "www"
+    if service.proto == "tcp" and service.name != "http" or service.name != "www"
       self.run_single("set RHOSTS #{host.address}")
       self.run_single("set RPORT #{service.port}")
       self.run_single("run")
