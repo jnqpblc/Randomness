@@ -1,28 +1,2 @@
 use auxiliary/scanner/http/jboss_status
-set SSL false
-
-<ruby>
-framework.db.hosts.each do |host|
-  host.services.each do |service|
-    if service.info !~ /IIS/ and service.name == "http" or service.name == "www"
-      self.run_single("set RHOSTS #{host.address}")
-      self.run_single("set RPORT #{service.port}")
-      self.run_single("run")
-    end
-  end
-end
-</ruby>
-
-set SSL true
-
-<ruby>
-framework.db.hosts.each do |host|
-  host.services.each do |service|
-    if service.info !~ /IIS/ and service.name == "https" or service.name == "ssl/http"
-      self.run_single("set RHOSTS #{host.address}")
-      self.run_single("set RPORT #{service.port}")
-      self.run_single("run")
-    end
-  end
-end
-</ruby>
+resource stub_http_rhosts.rb
