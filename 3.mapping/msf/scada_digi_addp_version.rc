@@ -1,10 +1,2 @@
 use auxiliary/scanner/scada/digi_addp_version
-
-<ruby>
-framework.db.hosts.each do |host|
-  host.services.each do |service|
-    self."run"_single("set RHOSTS #{host.address}")
-    self."run"_single("run")
-  end
-end
-</ruby>
+resource stub_all_rhosts.rb
