@@ -1,11 +1,3 @@
 use auxiliary/scanner/vxworks/wdbrpc_version
 set RPORT 17185
-
-<ruby>
-framework.db.hosts.each do |host|
-  host.services.each do |service|
-    self.run_single("set RHOSTS #{host.address}")
-    self.run_single("run")
-  end
-end
-</ruby>
+resource stub_all_rhosts.rb
