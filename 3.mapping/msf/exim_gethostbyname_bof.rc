@@ -2,5 +2,5 @@ use exploit/linux/smtp/exim_gethostbyname_bof
 set SENDER_HOST_ADDRESS 1.1.1.1
 
 <ruby>
-require './stub_smtp_rhosts.rb'
+include './stub_smtp_rhosts.rb'
 </ruby>
