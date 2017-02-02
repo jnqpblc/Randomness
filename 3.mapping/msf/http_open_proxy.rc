@@ -1,0 +1,2 @@
+use auxiliary/scanner/http/open_proxy
+resource stub_http_rhosts.rb
