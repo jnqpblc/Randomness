@@ -1,13 +1,2 @@
 use exploit/windows/smb/ms05_039_pnp
-
-<ruby>
-framework.db.hosts.each do |host|
-  host.services.each do |service|
-    if service.port == 445
-      self.run_single("set RHOSTS #{host.address}")
-      self.run_single("set RPORT #{service.port}")
-      self.run_single("check")
-    end
-  end
-end
-</ruby>
+resource stub_smb_explt_rhosts.rb
