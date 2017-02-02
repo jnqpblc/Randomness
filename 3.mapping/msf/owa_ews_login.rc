@@ -1,0 +1,2 @@
+use auxiliary/scanner/http/owa_ews_login
+resource stub_http_rhosts.rb
