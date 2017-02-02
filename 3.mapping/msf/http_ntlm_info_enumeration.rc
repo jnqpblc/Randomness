@@ -1,2 +1,2 @@
 use auxiliary/scanner/http/ntlm_info_enumeration
-resource stub_http_rhosts.rb
+resource stub_http_iis_rhosts.rb
