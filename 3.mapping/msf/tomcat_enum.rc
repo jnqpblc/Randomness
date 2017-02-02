@@ -1,0 +1,2 @@
+use auxiliary/scanner/http/tomcat_enum
+resource stub_http_rhosts.rb
