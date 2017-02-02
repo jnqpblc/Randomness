@@ -1,2 +1,0 @@
-use auxiliary/scanner/http/ssl_version
-resource stub_http_rhosts.rb
