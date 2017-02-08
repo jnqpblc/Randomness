@@ -1,0 +1,1 @@
+db_nmap -iL /tmp/targets -Pn -n -sS -p 0-65535 -T4 --min-hostgroup 256 --min-parallelism 64
