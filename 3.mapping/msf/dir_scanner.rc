@@ -1,2 +1,4 @@
 use auxiliary/scanner/http/dir_scanner
+#set DICTIONARY /usr/share/dirb/wordlists/big.txt
+set DICTIONARY /usr/share/dirb/wordlists/common.txt
 resource stub_http_rhosts.rb
