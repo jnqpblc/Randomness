@@ -1,0 +1,2 @@
+use exploit/multi/http/tomcat_mgr_deploy
+resource stub_http_explt_rhosts.rb
