@@ -6,11 +6,14 @@ The *.rb files are the brains of each resource (*.rc) file. These files are shar
 
 Below is a example:
 
-```$ cat ftp_anonymous.rc
+```
+$ cat ftp_anonymous.rc
 use auxiliary/scanner/ftp/anonymous
-resource stub_ftp_rhosts.rb```
+resource stub_ftp_rhosts.rb
+```
 
-```$ cat stub_ftp_rhosts.rb 
+```
+$ cat stub_ftp_rhosts.rb 
 <ruby>
 framework.db.hosts.each do |host|
   host.services.each do |service|
@@ -21,4 +24,5 @@ framework.db.hosts.each do |host|
     end
   end
 end
-</ruby>```
+</ruby>
+```
