@@ -1,0 +1,2 @@
+use auxiliary/scanner/http/dir_scanner
+resource stub_http_rhosts.rb
