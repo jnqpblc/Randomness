@@ -1,0 +1,2 @@
+use exploit/multi/http/struts_default_action_mapper
+resource stub_http_explt_rhosts.rb
