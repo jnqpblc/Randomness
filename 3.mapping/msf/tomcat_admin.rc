@@ -1,0 +1,2 @@
+use auxiliary/admin/http/tomcat_administration
+resource stub_http_rhosts.rb
