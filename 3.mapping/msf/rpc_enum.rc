@@ -1,0 +1,13 @@
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.name =~ /rpc/i
+      rpc_cmd = "for INT in $(python /usr/share/doc/python-impacket/examples/ifmap.py #{host.address} #{service.port}|awk -F"'" '{print $2","$4}'); do echo "### $INT"; python /usr/share/doc/python-impacket/examples/opdump.py #{host.address} #{service.port} $(echo $INT|awk -F',' '{print $1}') $(echo $INT|awk -F',' '{print $2}'); done"
+      print "\n\n"
+      print_status "Running ifmap.py and opdump.py on #{host.address}:#{service.port}"
+      print_status "#{rpc_cmd}"
+      run = system rpc_cmd
+    end
+  end
+end
+</ruby>
