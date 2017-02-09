@@ -1,0 +1,7 @@
+<ruby>
+print "Enter <username%password> <dc_ip> <domain> <group_rid>: "
+auth, dc, domain, rid = gets.split.map(&:to_s)
+rpcclient_cmd = "for MEMBER in $(rpcclient #{dc} -U '#{auth}' -W #{domain} -c 'querygroupmem #{rid}' |egrep -o '0x[0-9]{3}'); do rpcclient #{dc} -U '#{auth}'$
+print_status "#{rpcclient_cmd}"
+run = system rpcclient_cmd
+</ruby>
