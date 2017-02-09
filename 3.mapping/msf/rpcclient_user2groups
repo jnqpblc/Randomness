@@ -1,0 +1,9 @@
+<ruby>
+print "Enter <username%password> <dc_ip> <domain> <user_rid>: "
+auth, dc, domain, rid = gets.split.map(&:to_s)
+#rpcclient_cmd = "rpcclient #{dc} -U #{auth} -W #{domain} -c 'queryusergroups #{rid}'"
+#rpcclient_cmd = "rpcclient #{dc} -U #{auth} -W #{domain} -c 'querygroup #{rid}'"
+rpcclient_cmd = "for GROUP in $(rpcclient #{dc} -U '#{auth}' -W #{domain} -c 'queryusergroups #{rid}' |egrep -o '0x[0-9]{3}'); do printf \"Group RID:\t$GROUP$
+print_status "#{rpcclient_cmd}"
+run = system rpcclient_cmd
+</ruby>
