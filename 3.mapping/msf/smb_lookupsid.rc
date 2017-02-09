@@ -1,2 +1,2 @@
 use auxiliary/scanner/smb/smb_lookupsid
-resource stub_rpc_rhosts.rb
+resource stub_smb_rhosts.rb
