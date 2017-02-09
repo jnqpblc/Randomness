@@ -4,7 +4,7 @@ framework.db.hosts.each do |host|
     if service.port == 139
       samrdump_cmd = "python /usr/share/doc/python-impacket/examples/samrdump.py #{host.address} #{service.port}/SMB"
       print "\n\n"
-      print_status "Running samrdump on #{host.address}:#{service.port}"
+      print_status "Running Impacket's samrdump.py on #{host.address}:#{service.port}"
       print_status "#{samrdump_cmd}"
       run = system samrdump_cmd
     end
@@ -18,7 +18,7 @@ framework.db.hosts.each do |host|
     if service.port == 445
       samrdump_cmd = "python /usr/share/doc/python-impacket/examples/samrdump.py #{host.address} #{service.port}/SMB"
       print "\n\n"
-      print_status "Running samrdump on #{host.address}:#{service.port}"
+      print_status "Running Impacket's samrdump.py on #{host.address}:#{service.port}"
       print_status "#{samrdump_cmd}"
       run = system samrdump_cmd
     end
