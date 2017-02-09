@@ -1,0 +1,25 @@
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.name == "http" || service.name == "www"
+      whatweb_cmd = "whatweb -a 4 --no-errors http://#{host.address}:#{service.port}/ | tee ~/msf-#{framework.db.workspace.name}-whatweb-output-#{host.address}-#{service.port}-http.txt"
+      print_status "Running whatweb on #{host.address}:#{service.port}"
+      print_status "#{whatweb_cmd}"
+      run = system whatweb_cmd
+    end
+  end
+end
+</ruby>
+
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.name == "https" || service.name == "ssl/http"
+      whatweb_cmd = "whatweb -a 4 --no-errors https://#{host.address}:#{service.port}/ | tee ~/msf-#{framework.db.workspace.name}-whatweb-output-#{host.address}-#{service.port}-https.txt"
+      print_status "Running whatweb on #{host.address}:#{service.port}"
+      print_status "#{whatweb_cmd}"
+      run = system whatweb_cmd
+    end
+  end
+end
+</ruby>
