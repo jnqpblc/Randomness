@@ -18,7 +18,7 @@ framework.db.hosts.each do |host|
     if service.name == "https" || service.name == "ssl/http"
       dirb_cmd = "dirb https://#{host.address}:#{service.port}/ /usr/share/wordlists/dirb/big.txt -o ~/msf-#{framework.db.workspace.name}-dirb-output-#{host.address}-#{service.port}-https.txt -r"
       print "\n\n"
-      print_status "\n\nRunning dirb on #{host.address}:#{service.port}"
+      print_status "Running dirb on #{host.address}:#{service.port}"
       print_status "#{dirb_cmd}"
       run = system dirb_cmd
     end
