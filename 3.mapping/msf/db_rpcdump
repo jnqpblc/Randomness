@@ -1,0 +1,41 @@
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.port == 135
+      rpcdump_cmd = "python /usr/share/doc/python-impacket/examples/rpcdump.py #{host.address} #{service.port}/TCP | tee ~/msf-#{framework.db.workspace.name}-rpcdump-output-#{host.address}-#{service.port}-tcp.txt"
+      print "\n\n"
+      print_status "Running rpcdump on #{host.address}:#{service.port}"
+      print_status "#{rpcdump_cmd}"
+      run = system rpcdump_cmd
+    end
+  end
+end
+</ruby>
+
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.port == 139
+      rpcdump_cmd = "python /usr/share/doc/python-impacket/examples/rpcdump.py #{host.address} #{service.port}/SMB | tee ~/msf-#{framework.db.workspace.name}-rpcdump-output-#{host.address}-#{service.port}-smb.txt"
+      print "\n\n"
+      print_status "Running rpcdump on #{host.address}:#{service.port}"
+      print_status "#{rpcdump_cmd}"
+      run = system rpcdump_cmd
+    end
+  end
+end
+</ruby>
+
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.port == 445
+      rpcdump_cmd = "python /usr/share/doc/python-impacket/examples/rpcdump.py #{host.address} #{service.port}/SMB | tee ~/msf-#{framework.db.workspace.name}-rpcdump-output-#{host.address}-#{service.port}-smb.txt"
+      print "\n\n"
+      print_status "Running rpcdump on #{host.address}:#{service.port}"
+      print_status "#{rpcdump_cmd}"
+      run = system rpcdump_cmd
+    end
+  end
+end
+</ruby>
