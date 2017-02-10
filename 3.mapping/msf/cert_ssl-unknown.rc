@@ -1,4 +1,3 @@
-#use auxiliary/scanner/http/cert
 use auxiliary/scanner/http/ssl
 
 <ruby>
