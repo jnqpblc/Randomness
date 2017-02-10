@@ -1,4 +1,5 @@
 use auxiliary/scanner/http/gitlab_login
+set TARGETURI /users/sign_in
 set BLANK_PASSWORDS true
 set USER_AS_PASS true
 set VERBOSE false
