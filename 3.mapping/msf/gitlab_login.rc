@@ -1,2 +1,5 @@
 use auxiliary/scanner/http/gitlab_login
+set BLANK_PASSWORDS true
+set USER_AS_PASS true
+set VERBOSE false
 resource stub_http_rhosts.rb
