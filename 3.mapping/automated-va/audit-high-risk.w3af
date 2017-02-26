@@ -1,0 +1,40 @@
+profiles
+use audit_high_risk
+back
+plugins
+
+# Configure HTTP settings
+http-settings
+set timeout 5
+back
+
+# Configure OUTPUT
+output console, text_file, xml_file, export_requests
+output config console
+set verbose False
+back
+output config text_file
+set output_file ~/{CLIENT}/w3af-output-{TARGET}-{PORT}-{PROTO}.txt
+set verbose False
+back
+output config xml_file
+set output_file ~/{CLIENT}/w3af-output-{TARGET}-{PORT}-{PROTO}.xml
+set verbose False
+back
+output config export_requests
+set output_file ~/{CLIENT}/w3af-output-{TARGET}-{PORT}-{PROTO}.export
+set verbose False
+back
+
+# Exit plugin configuration
+back
+
+# Configure TARGET
+target
+set target {PROTO}://{TARGET}:{PORT}/
+back
+
+# Begin
+cleanup
+start
+exit
