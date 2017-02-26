@@ -1,0 +1,2 @@
+use exploits/multi/http/rails_dynamic_render_code_exec
+resource stub_http_explt_rhost.rb

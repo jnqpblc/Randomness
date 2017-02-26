@@ -1,0 +1,2 @@
+use exploits/linux/http/dlink_dir605l_captcha_bof
+resource stub_http_explt_rhost.rb

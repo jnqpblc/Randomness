@@ -1,0 +1,2 @@
+use exploits/linux/http/f5_icall_cmd
+resource stub_http_explt_rhost.rb

@@ -1,0 +1,2 @@
+use exploits/windows/http/rabidhamster_r4_log
+resource stub_http_explt_rhost.rb

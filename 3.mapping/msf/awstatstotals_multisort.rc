@@ -1,0 +1,2 @@
+use exploits/unix/webapp/awstatstotals_multisort
+resource stub_http_explt_rhost.rb

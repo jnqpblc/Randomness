@@ -1,0 +1,2 @@
+use exploits/windows/http/mailenable_auth_header
+resource stub_http_explt_rhost.rb

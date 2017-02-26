@@ -1,0 +1,2 @@
+use exploits/multi/elasticsearch/search_groovy_script
+resource stub_http_explt_rhost.rb

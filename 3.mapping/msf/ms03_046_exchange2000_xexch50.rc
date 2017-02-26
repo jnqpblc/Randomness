@@ -1,0 +1,2 @@
+use exploits/windows/smtp/ms03_046_exchange2000_xexch50
+resource stub_smtp_explt_rhost.rb

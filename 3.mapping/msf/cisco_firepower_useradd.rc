@@ -1,0 +1,2 @@
+use exploits/linux/http/cisco_firepower_useradd
+resource stub_http_explt_rhost.rb

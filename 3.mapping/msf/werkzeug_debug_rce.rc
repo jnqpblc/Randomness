@@ -1,0 +1,2 @@
+use exploits/multi/http/werkzeug_debug_rce
+resource stub_http_explt_rhost.rb

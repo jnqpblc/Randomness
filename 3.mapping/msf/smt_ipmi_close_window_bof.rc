@@ -1,0 +1,2 @@
+use exploits/linux/http/smt_ipmi_close_window_bof
+resource stub_http_explt_rhost.rb

@@ -1,0 +1,2 @@
+use exploits/windows/ftp/dreamftp_format
+resource stub_ftp_explt_rhost.rb

@@ -1,0 +1,2 @@
+use exploits/multi/http/jenkins_script_console
+resource stub_http_explt_rhost.rb

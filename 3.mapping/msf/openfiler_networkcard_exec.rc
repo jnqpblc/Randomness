@@ -1,0 +1,2 @@
+use exploits/linux/http/openfiler_networkcard_exec
+resource stub_http_explt_rhost.rb

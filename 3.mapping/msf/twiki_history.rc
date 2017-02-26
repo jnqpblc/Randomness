@@ -1,0 +1,2 @@
+use exploits/unix/webapp/twiki_history
+resource stub_http_explt_rhost.rb

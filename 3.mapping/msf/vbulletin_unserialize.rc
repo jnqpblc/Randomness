@@ -1,0 +1,2 @@
+use exploits/multi/http/vbulletin_unserialize
+resource stub_http_explt_rhost.rb

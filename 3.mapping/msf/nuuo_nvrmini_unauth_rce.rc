@@ -1,0 +1,2 @@
+use exploits/linux/http/nuuo_nvrmini_unauth_rce
+resource stub_http_explt_rhost.rb

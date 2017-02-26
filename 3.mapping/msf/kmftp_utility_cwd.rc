@@ -1,0 +1,2 @@
+use exploits/windows/ftp/kmftp_utility_cwd
+resource stub_ftp_explt_rhost.rb

@@ -1,0 +1,2 @@
+use exploits/multi/http/zabbix_script_exec
+resource stub_http_explt_rhost.rb

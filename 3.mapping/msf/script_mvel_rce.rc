@@ -1,0 +1,2 @@
+use exploits/multi/elasticsearch/script_mvel_rce
+resource stub_http_explt_rhost.rb

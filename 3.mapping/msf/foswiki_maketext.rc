@@ -1,0 +1,2 @@
+use exploits/unix/webapp/foswiki_maketext
+resource stub_http_explt_rhost.rb

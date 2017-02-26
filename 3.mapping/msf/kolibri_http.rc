@@ -1,0 +1,2 @@
+use exploits/windows/http/kolibri_http
+resource stub_http_explt_rhost.rb

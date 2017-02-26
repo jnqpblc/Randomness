@@ -1,1 +1,3 @@
-db_nmap -iL /tmp/targets -Pn -n -sS -p 0-65535 -T4 --min-hostgroup 256 --min-parallelism 64
+<ruby>
+self.run_single("db_nmap -iL /tmp/#{framework.db.workspace.name}-targets -Pn -n -sS -p 0-65535 -T5 --min-hostgroup 128 --min-parallelism 64")
+</ruby>

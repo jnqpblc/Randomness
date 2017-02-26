@@ -1,0 +1,2 @@
+use exploits/unix/webapp/drupal_restws_exec
+resource stub_http_explt_rhost.rb

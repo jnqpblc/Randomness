@@ -1,0 +1,2 @@
+use exploits/windows/ftp/sami_ftpd_user
+resource stub_ftp_explt_rhost.rb

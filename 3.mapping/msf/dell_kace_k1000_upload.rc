@@ -1,0 +1,2 @@
+use exploits/unix/http/dell_kace_k1000_upload
+resource stub_http_explt_rhost.rb

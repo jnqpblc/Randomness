@@ -1,0 +1,2 @@
+use exploit/multi/http/jboss_invoke_deploy
+resource stub_http_explt_rhost.rb

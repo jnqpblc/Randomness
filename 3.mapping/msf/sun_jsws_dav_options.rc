@@ -1,0 +1,2 @@
+use exploits/multi/http/sun_jsws_dav_options
+resource stub_http_explt_rhost.rb

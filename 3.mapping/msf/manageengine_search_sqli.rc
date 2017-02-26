@@ -1,0 +1,2 @@
+use exploits/multi/http/manageengine_search_sqli
+resource stub_http_explt_rhost.rb

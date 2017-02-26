@@ -1,0 +1,2 @@
+use exploits/windows/http/rejetto_hfs_exec
+resource stub_http_explt_rhost.rb

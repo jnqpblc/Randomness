@@ -1,0 +1,2 @@
+use exploits/windows/http/badblue_ext_overflow
+resource stub_http_explt_rhost.rb

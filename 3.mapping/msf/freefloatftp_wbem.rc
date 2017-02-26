@@ -1,0 +1,2 @@
+use exploits/windows/ftp/freefloatftp_wbem
+resource stub_ftp_explt_rhost.rb

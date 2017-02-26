@@ -1,0 +1,2 @@
+use exploits/windows/ftp/oracle9i_xdb_ftp_unlock
+resource stub_ftp_explt_rhost.rb

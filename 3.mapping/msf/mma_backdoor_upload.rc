@@ -1,0 +1,2 @@
+use exploits/multi/http/mma_backdoor_upload
+resource stub_http_explt_rhost.rb

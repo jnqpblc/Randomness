@@ -1,0 +1,2 @@
+use exploits/windows/http/lexmark_markvision_gfd_upload
+resource stub_http_explt_rhost.rb

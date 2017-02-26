@@ -1,0 +1,2 @@
+use exploits/linux/http/synology_dsm_sliceupload_exec_noauth
+resource stub_http_explt_rhost.rb

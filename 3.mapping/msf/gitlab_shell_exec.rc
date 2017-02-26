@@ -1,0 +1,2 @@
+use exploits/multi/http/gitlab_shell_exec
+resource stub_http_explt_rhost.rb

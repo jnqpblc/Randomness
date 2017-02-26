@@ -1,0 +1,2 @@
+use exploits/linux/http/trueonline_p660hn_v2_rce
+resource stub_http_explt_rhost.rb

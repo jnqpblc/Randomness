@@ -1,7 +1,0 @@
-<ruby>
-print "Enter <username%password> <dc_ip> <domain> <username_to_lookup>: "
-auth, dc, domain, username = gets.split.map(&:to_s)
-rpcclient_cmd = "rpcclient #{dc} -U #{auth} -W #{domain} -c 'samlookupnames domain #{username}'"
-print_status "#{rpcclient_cmd}"
-run = system rpcclient_cmd
-</ruby>

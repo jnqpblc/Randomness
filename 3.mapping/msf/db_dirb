@@ -2,7 +2,7 @@
 framework.db.hosts.each do |host|
   host.services.each do |service|
     if service.name == "http" || service.name == "www"
-      dirb_cmd = "dirb http://#{host.address}:#{service.port}/ /usr/share/wordlists/dirb/big.txt -o ~/msf-#{framework.db.workspace.name}-dirb-output-#{host.address}-#{service.port}-http.txt -r"
+      dirb_cmd = "dirb http://#{host.address}:#{service.port}/ /usr/share/wordlists/dirb/common.txt -o ~/msf-#{framework.db.workspace.name}-dirb-output-#{host.address}-#{service.port}-http.txt -r"
       print "\n\n"
       print_status "Running dirb on #{host.address}:#{service.port}"
       print_status "#{dirb_cmd}"
@@ -16,7 +16,7 @@ end
 framework.db.hosts.each do |host|
   host.services.each do |service|
     if service.name == "https" || service.name == "ssl/http"
-      dirb_cmd = "dirb https://#{host.address}:#{service.port}/ /usr/share/wordlists/dirb/big.txt -o ~/msf-#{framework.db.workspace.name}-dirb-output-#{host.address}-#{service.port}-https.txt -r"
+      dirb_cmd = "dirb https://#{host.address}:#{service.port}/ /usr/share/wordlists/dirb/common.txt -o ~/msf-#{framework.db.workspace.name}-dirb-output-#{host.address}-#{service.port}-https.txt -r"
       print "\n\n"
       print_status "Running dirb on #{host.address}:#{service.port}"
       print_status "#{dirb_cmd}"

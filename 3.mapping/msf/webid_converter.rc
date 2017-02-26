@@ -1,0 +1,2 @@
+use exploits/linux/http/webid_converter
+resource stub_http_explt_rhost.rb

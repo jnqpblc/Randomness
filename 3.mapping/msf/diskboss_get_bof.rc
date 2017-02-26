@@ -1,0 +1,2 @@
+use exploits/windows/http/diskboss_get_bof
+resource stub_http_explt_rhost.rb

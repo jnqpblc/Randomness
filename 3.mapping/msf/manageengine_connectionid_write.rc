@@ -1,0 +1,2 @@
+use exploits/windows/http/manageengine_connectionid_write
+resource stub_http_explt_rhost.rb

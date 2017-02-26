@@ -1,0 +1,2 @@
+use exploits/multi/http/mediawiki_thumb
+resource stub_http_explt_rhost.rb

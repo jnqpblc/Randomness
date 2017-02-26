@@ -1,0 +1,2 @@
+use exploits/linux/http/astium_sqli_upload
+resource stub_http_explt_rhost.rb

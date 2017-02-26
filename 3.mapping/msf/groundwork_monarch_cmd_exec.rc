@@ -1,0 +1,2 @@
+use exploits/linux/http/groundwork_monarch_cmd_exec
+resource stub_http_explt_rhost.rb

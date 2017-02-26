@@ -1,0 +1,2 @@
+use exploits/unix/webapp/carberp_backdoor_exec
+resource stub_http_explt_rhost.rb

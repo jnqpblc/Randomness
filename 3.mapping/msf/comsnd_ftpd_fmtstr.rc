@@ -1,0 +1,2 @@
+use exploits/windows/ftp/comsnd_ftpd_fmtstr
+resource stub_ftp_explt_rhost.rb

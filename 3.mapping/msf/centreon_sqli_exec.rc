@@ -1,0 +1,2 @@
+use exploits/linux/http/centreon_sqli_exec
+resource stub_http_explt_rhost.rb

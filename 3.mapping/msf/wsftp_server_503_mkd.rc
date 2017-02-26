@@ -1,0 +1,2 @@
+use exploits/windows/ftp/wsftp_server_503_mkd
+resource stub_ftp_explt_rhost.rb

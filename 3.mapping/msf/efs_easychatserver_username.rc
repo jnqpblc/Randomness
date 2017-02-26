@@ -1,0 +1,2 @@
+use exploits/windows/http/efs_easychatserver_username
+resource stub_http_explt_rhost.rb

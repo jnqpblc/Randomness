@@ -1,0 +1,2 @@
+use exploits/windows/http/apache_mod_rewrite_ldap
+resource stub_http_explt_rhost.rb

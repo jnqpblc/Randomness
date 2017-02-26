@@ -1,0 +1,2 @@
+use exploits/unix/webapp/wp_asset_manager_upload_exec
+resource stub_http_explt_rhost.rb

@@ -1,0 +1,2 @@
+use exploits/unix/webapp/wp_google_document_embedder_exec
+resource stub_http_explt_rhost.rb

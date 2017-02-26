@@ -1,0 +1,2 @@
+use exploits/windows/ftp/turboftp_port
+resource stub_ftp_explt_rhost.rb

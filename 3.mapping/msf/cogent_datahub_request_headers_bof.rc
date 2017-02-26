@@ -1,0 +1,2 @@
+use exploits/windows/http/cogent_datahub_request_headers_bof
+resource stub_http_explt_rhost.rb

@@ -1,0 +1,2 @@
+use exploits/windows/http/ca_igateway_debug
+resource stub_http_explt_rhost.rb

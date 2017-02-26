@@ -1,0 +1,3 @@
+use exploits/windows/smtp/mailcarrier_smtp_ehlo
+set LHOST 127.0.0.1
+resource stub_smtp_explt_rhost.rb

@@ -1,0 +1,2 @@
+use exploits/windows/mssql/ms09_004_sp_replwritetovarbin_sqli
+resource stub_mssql_explt_rhost.rb

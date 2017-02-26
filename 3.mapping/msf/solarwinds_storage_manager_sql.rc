@@ -1,0 +1,2 @@
+use exploits/windows/http/solarwinds_storage_manager_sql
+resource stub_http_explt_rhost.rb

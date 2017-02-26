@@ -1,0 +1,2 @@
+use exploits/windows/smtp/njstar_smtp_bof
+resource stub_smtp_explt_rhost.rb

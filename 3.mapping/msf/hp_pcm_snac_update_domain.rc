@@ -1,0 +1,2 @@
+use exploits/windows/http/hp_pcm_snac_update_domain
+resource stub_http_explt_rhost.rb

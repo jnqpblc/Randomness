@@ -1,0 +1,2 @@
+use exploits/windows/ftp/xlink_server
+resource stub_ftp_explt_rhost.rb

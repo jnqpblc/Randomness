@@ -1,0 +1,2 @@
+use exploits/unix/webapp/wp_revslider_upload_execute
+resource stub_http_explt_rhost.rb

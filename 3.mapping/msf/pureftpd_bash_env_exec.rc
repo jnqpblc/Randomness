@@ -1,0 +1,2 @@
+use exploits/multi/ftp/pureftpd_bash_env_exec
+resource stub_ftp_explt_rhost.rb

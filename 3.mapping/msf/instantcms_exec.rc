@@ -1,0 +1,2 @@
+use exploits/unix/webapp/instantcms_exec
+resource stub_http_explt_rhost.rb

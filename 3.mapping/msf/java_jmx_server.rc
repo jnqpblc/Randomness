@@ -1,0 +1,2 @@
+use exploits/multi/misc/java_jmx_server
+resource stub_rmi_explt_rhost.rb

@@ -1,0 +1,2 @@
+use exploits/unix/webapp/trixbox_langchoice
+resource stub_http_explt_rhost.rb

@@ -1,0 +1,2 @@
+use exploits/unix/webapp/php_vbulletin_template
+resource stub_http_explt_rhost.rb

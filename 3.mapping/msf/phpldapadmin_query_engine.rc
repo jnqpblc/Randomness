@@ -1,0 +1,2 @@
+use exploits/multi/http/phpldapadmin_query_engine
+resource stub_http_explt_rhost.rb

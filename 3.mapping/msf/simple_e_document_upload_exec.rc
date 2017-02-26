@@ -1,0 +1,2 @@
+use exploits/unix/webapp/simple_e_document_upload_exec
+resource stub_http_explt_rhost.rb

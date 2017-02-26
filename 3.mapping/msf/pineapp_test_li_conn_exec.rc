@@ -1,0 +1,2 @@
+use exploits/linux/http/pineapp_test_li_conn_exec
+resource stub_http_explt_rhost.rb

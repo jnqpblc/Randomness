@@ -1,0 +1,2 @@
+use exploits/windows/lotus/domino_sametime_stmux
+resource stub_http_explt_rhost.rb

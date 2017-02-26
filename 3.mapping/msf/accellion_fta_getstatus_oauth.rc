@@ -1,0 +1,2 @@
+use exploits/linux/http/accellion_fta_getstatus_oauth
+resource stub_http_explt_rhost.rb

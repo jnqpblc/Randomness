@@ -1,5 +1,6 @@
 <ruby>
 Dir["*.rc"].sort.each do |script|
   self.run_single("resource #{script}")
+  self.run_single("back")
 end
 </ruby>

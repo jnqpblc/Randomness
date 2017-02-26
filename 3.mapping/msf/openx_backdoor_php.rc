@@ -1,0 +1,2 @@
+use exploits/multi/http/openx_backdoor_php
+resource stub_http_explt_rhost.rb

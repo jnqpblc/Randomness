@@ -1,0 +1,2 @@
+use exploits/linux/http/tiki_calendar_exec
+resource stub_http_explt_rhost.rb

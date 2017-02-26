@@ -1,0 +1,2 @@
+use exploits/windows/mysql/mysql_start_up
+resource stub_mysql_explt_rhost.rb

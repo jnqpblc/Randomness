@@ -1,0 +1,2 @@
+use exploits/unix/webapp/sphpblog_file_upload
+resource stub_http_explt_rhost.rb

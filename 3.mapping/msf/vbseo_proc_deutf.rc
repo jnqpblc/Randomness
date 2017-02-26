@@ -1,0 +1,2 @@
+use exploits/multi/http/vbseo_proc_deutf
+resource stub_http_explt_rhost.rb

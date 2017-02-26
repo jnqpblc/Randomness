@@ -1,0 +1,2 @@
+use exploits/linux/http/railo_cfml_rfi
+resource stub_http_explt_rhost.rb

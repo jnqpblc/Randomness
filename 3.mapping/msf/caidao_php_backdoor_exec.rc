@@ -1,0 +1,2 @@
+use exploits/multi/http/caidao_php_backdoor_exec
+resource stub_http_explt_rhost.rb

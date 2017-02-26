@@ -1,0 +1,2 @@
+use exploits/multi/http/visual_mining_netcharts_upload
+resource stub_http_explt_rhost.rb

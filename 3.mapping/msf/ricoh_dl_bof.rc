@@ -1,0 +1,2 @@
+use exploits/windows/ftp/ricoh_dl_bof
+resource stub_ftp_explt_rhost.rb

@@ -1,0 +1,2 @@
+use exploits/linux/http/empire_skywalker
+resource stub_http_explt_rhost.rb

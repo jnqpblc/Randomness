@@ -1,0 +1,2 @@
+use exploits/multi/http/solarwinds_store_manager_auth_filter
+resource stub_http_explt_rhost.rb

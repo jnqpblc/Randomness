@@ -1,0 +1,2 @@
+use exploits/windows/oracle/tns_service_name
+resource stub_oracle_explt_rhost.rb

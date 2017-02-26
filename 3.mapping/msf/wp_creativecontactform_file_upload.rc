@@ -1,0 +1,2 @@
+use exploits/unix/webapp/wp_creativecontactform_file_upload
+resource stub_http_explt_rhost.rb

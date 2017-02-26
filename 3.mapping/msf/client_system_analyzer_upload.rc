@@ -1,0 +1,2 @@
+use exploits/windows/oracle/client_system_analyzer_upload
+resource stub_oracle_explt_rhost.rb

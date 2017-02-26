@@ -1,0 +1,2 @@
+use exploits/linux/samba/lsa_transnames_heap
+resource stub_smb_explt_rhost.rb

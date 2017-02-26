@@ -1,0 +1,2 @@
+use exploits/multi/http/oracle_ats_file_upload
+resource stub_http_explt_rhost.rb

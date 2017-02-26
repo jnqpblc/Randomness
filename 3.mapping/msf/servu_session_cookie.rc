@@ -1,0 +1,2 @@
+use exploits/windows/http/servu_session_cookie
+resource stub_http_explt_rhost.rb

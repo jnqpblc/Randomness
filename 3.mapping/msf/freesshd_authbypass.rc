@@ -1,0 +1,2 @@
+use exploits/windows/ssh/freesshd_authbypass
+resource stub_ssh_explt_rhost.rb

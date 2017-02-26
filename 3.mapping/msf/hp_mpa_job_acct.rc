@@ -1,0 +1,2 @@
+use exploits/windows/http/hp_mpa_job_acct
+resource stub_http_explt_rhost.rb

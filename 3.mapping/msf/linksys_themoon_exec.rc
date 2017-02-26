@@ -1,0 +1,2 @@
+use exploits/linux/http/linksys_themoon_exec
+resource stub_http_explt_rhost.rb

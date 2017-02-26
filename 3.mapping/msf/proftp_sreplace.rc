@@ -1,0 +1,2 @@
+use exploits/linux/ftp/proftp_sreplace
+resource stub_ftp_explt_rhost.rb

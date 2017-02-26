@@ -1,0 +1,2 @@
+use exploits/linux/http/hp_system_management
+resource stub_http_explt_rhost.rb

@@ -1,0 +1,2 @@
+use exploits/windows/ftp/freeftpd_pass
+resource stub_ftp_explt_rhost.rb

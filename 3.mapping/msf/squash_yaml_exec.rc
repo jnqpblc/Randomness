@@ -1,0 +1,2 @@
+use exploits/unix/webapp/squash_yaml_exec
+resource stub_http_explt_rhost.rb

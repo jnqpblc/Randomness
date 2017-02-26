@@ -1,0 +1,2 @@
+use exploits/unix/webapp/wp_wpshop_ecommerce_file_upload
+resource stub_http_explt_rhost.rb
