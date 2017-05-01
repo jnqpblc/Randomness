@@ -1,0 +1,9 @@
+use auxiliary/scanner/http/cisco_ssl_vpn
+set USER_FILE /opt/metasploit/apps/pro/data/wordlists/telnet_cisco_default_user.txt
+set PASS_FILE /opt/metasploit/apps/pro/data/wordlists/telnet_cisco_default_pass.txt
+set BLANK_PASSWORDS true
+set USER_AS_PASS true
+set VERBOSE false 
+unset USERNAME
+unset PASSWORD
+resource stub_http_cisco_rhosts.rb

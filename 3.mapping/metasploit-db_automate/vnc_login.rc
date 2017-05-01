@@ -1,3 +1,3 @@
 use auxiliary/scanner/vnc/vnc_login
-resource set VERBOSE false
+set VERBOSE false
 resource stub_vnc_rhosts.rb

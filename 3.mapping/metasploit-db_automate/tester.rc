@@ -1,0 +1,3 @@
+use auxiliary/scanner/smb/smb_version
+set RPORT 445
+resource stub_all_rhosts.rb

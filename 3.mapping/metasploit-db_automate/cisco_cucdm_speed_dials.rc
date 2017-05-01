@@ -1,0 +1,2 @@
+use auxiliary/voip/cisco_cucdm_speed_dials
+resource stub_http_rhost.rb

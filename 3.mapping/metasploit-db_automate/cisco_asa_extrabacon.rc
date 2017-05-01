@@ -1,0 +1,2 @@
+use auxiliary/admin/cisco/cisco_asa_extrabacon
+resource stub_snmp_rhosts.rb

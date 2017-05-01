@@ -1,0 +1,22 @@
+<ruby>
+framework.db.hosts.each do |host|
+  host.services.each do |service|
+    if service.name == "pptp"
+      print_status "Running pptp_versioning on #{host.address}:#{service.port}"
+      tcpdump_cmd = "tcpdump -i tun0 -nnA -w ~/msf-#{framework.db.workspace.name}-pptp-output-#{host.address}-#{service.port}.pcap src port 1723 2>&1 &"
+      print_status "#{tcpdump_cmd}"
+      run = system tcpdump_cmd
+      sleep 1
+      self.run_single("db_nmap -Pn -sS -T2 -p #{service.port} --open --script +pptp-version #{host.address}")
+      #job_kill = "jobs -l|awk '{print $2}'|xargs kill -9 "
+      job_kill = "for x in `jobs -l|awk '{print $2}'`; do kill -9 $x;done"
+      print_status "#{job_kill}"
+      run = system job_kill
+      packet_dump = "tcpdump -r ~/msf-#{framework.db.workspace.name}-pptp-output-#{host.address}-#{service.port}.pcap -nnA"
+      print_status "#{packet_dump}"
+      run = system packet_dump
+      print "\n\n"
+    end
+  end
+end
+</ruby>

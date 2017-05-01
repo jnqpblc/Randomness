@@ -1,7 +1,7 @@
 <ruby>
 framework.db.hosts.each do |host|
   host.services.each do |service|
-    self.run_single("db_nmap -n -Pn -sSV -T4 -p #{service.port} #{host.address}")
+    self.run_single("db_nmap -n -Pn -sSV -T4 -p #{service.port} --script +version #{host.address}")
   end
 end
 </ruby>

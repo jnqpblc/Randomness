@@ -3,5 +3,6 @@ grep_cmd = `grep -l auxiliary *.rc`.split
 grep_cmd.sort.each do |script|
   self.run_single("resource #{script}")
   self.run_single("back")
+  printf("\n\n")
 end
 </ruby>

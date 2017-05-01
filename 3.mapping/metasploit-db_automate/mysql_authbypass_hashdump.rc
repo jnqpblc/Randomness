@@ -1,0 +1,2 @@
+use auxiliary/scanner/mysql/mysql_authbypass_hashdump
+resource stub_mysql_rhosts.rb

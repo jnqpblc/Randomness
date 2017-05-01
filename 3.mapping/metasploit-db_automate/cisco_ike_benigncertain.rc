@@ -1,0 +1,2 @@
+use auxiliary/scanner/ike/cisco_ike_benigncertain
+resource stub_all_rhosts.rb

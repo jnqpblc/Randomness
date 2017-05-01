@@ -1,0 +1,2 @@
+use auxiliary/scanner/http/cisco_ios_auth_bypass
+resource stub_http_cisco_rhosts.rb
