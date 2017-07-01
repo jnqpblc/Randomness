@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ -z $1 ];then printf "\nSyntax: $0 <'query'|'example*'|'example*limited*'|'*example*'>\n\n"
+if [ -z $1 ];then printf "\nSyntax: $0 <'query'|'example*'|'example*limited*'|'example%20limited*'|'*example*'>\n\n"
 	else
 query=$1
 
