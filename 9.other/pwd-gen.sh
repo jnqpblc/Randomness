@@ -1,7 +1,7 @@
 #! /bin/sh
-num=32
-if [ x"${1}" = x"-n" ]; then
-  num=$2
+if [ -z $1 ];then printf "\nSyntax: $0 <Length|32|64|128>\n\n"
+        else
+LEN=$1;
+LANG=C tr -dc '[:print:]' </dev/urandom | head -c ${LEN}
+printf '\n'
 fi
-LANG=C tr -dc '[:print:]' </dev/urandom | head -c ${num}
-echo
