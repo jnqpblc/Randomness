@@ -1,4 +1,6 @@
 import sys, socket, ssl, re
+if len(sys.argv) < 3:
+    sys.exit('\nUsage: %s <host|10.1.1.1> <port|443> <file|/tmp/burp.req> \n' % sys.argv[0])
 
 # SET VARIABLES
 HOST, PORT = str(sys.argv[1]), int(sys.argv[2])
