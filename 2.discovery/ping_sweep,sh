@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ -z $1 ]; then printf "\nSyntax $0 <10.10.10|1st 3 Octets>\n\n";
+  else
+for num in $(seq 1 254); do
+  ping -c 1 -w 1 $1.$num >/dev/null && echo "$1.$num is up";
+done
+fi
