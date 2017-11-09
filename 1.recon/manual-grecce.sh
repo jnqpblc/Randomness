@@ -8,7 +8,8 @@ domain="$1"
 if [ $2 == '-s' ];then
 	for site in $(cat "$3");do
 		url="$part&q=%22*@$domain%22+site:$site"
-		open "https://www.google.com/search?q=%22*@$domain%22+site:$site&num=100&client=safari&rls=en&filter=0"
+		/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome "https://www.google.com/search?q=%22*@$domain%22+site:$site&num=100&client=safari&rls=en&filter=0"
+		wait
 		sleep .3;
 	done
 
