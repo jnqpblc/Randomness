@@ -1,2 +1,0 @@
-use exploits/linux/http/airties_login_cgi_bof
-resource stub_http_explt_rhost.rb

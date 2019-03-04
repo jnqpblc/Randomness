@@ -1,2 +1,0 @@
-use auxiliary/scanner/ssl/openssl_heartbleed
-resource stub_all_tcp_rhosts.rb

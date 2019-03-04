@@ -1,3 +1,0 @@
-use auxiliary/scanner/vnc/vnc_login
-set VERBOSE false
-resource stub_vnc_rhosts.rb

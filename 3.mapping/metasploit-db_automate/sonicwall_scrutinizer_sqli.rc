@@ -1,2 +1,0 @@
-use exploits/windows/http/sonicwall_scrutinizer_sqli
-resource stub_http_explt_rhost.rb

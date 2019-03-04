@@ -1,2 +1,0 @@
-use auxiliary/scanner/smb/smb_uninit_cred
-resource stub_smb_rhosts.rb

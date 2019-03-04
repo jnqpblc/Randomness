@@ -1,2 +1,0 @@
-use auxiliary/scanner/telnet/telnet_version
-resource stub_telnet_rhosts.rb

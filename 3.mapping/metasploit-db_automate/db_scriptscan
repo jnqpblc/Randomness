@@ -1,8 +1,0 @@
-<ruby>
-framework.db.hosts.each do |host|
-  host.services.each do |service|
-    #self.run_single("db_nmap -n -Pn -sV -p #{service.port} --script 'ALL and not (broadcast or dos or fuzzer)' --script-args 'Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)' --open #{host.address}")
-    self.run_single("db_nmap -n -Pn -sSV -p #{service.port} --script default,vuln,auth,intrusive,brute --script-args 'Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)' --open #{host.address}")
-  end
-end
-</ruby>

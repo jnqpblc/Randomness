@@ -1,2 +1,0 @@
-use exploits/windows/mssql/mssql_payload
-resource stub_mssql_explt_rhost.rb

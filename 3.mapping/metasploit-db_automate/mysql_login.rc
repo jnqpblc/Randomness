@@ -1,6 +1,0 @@
-use auxiliary/scanner/mysql/mysql_login
-set BLANK_PASSWORDS true
-set USER_AS_PASS true
-set VERBOSE false
-set USER_FILE /usr/share/metasploit-framework/data/wordlists/unix_users.txt
-resource stub_mysql_rhosts.rb

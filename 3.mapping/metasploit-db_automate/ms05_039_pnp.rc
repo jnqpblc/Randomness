@@ -1,2 +1,0 @@
-use exploit/windows/smb/ms05_039_pnp
-resource stub_smb_explt_rhosts.rb

@@ -1,2 +1,0 @@
-use exploits/linux/http/kloxo_sqli
-resource stub_http_explt_rhost.rb

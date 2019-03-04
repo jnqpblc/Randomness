@@ -1,2 +1,0 @@
-use exploits/windows/smtp/ypops_overflow1
-resource stub_smtp_explt_rhost.rb

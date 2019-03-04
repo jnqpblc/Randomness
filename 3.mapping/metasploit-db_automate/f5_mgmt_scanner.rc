@@ -1,2 +1,0 @@
-use auxiliary/scanner/http/f5_mgmt_scanner
-resource stub_http_rhosts.rb

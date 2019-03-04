@@ -1,2 +1,0 @@
-use exploits/linux/http/atutor_filemanager_traversal
-resource stub_http_explt_rhost.rb

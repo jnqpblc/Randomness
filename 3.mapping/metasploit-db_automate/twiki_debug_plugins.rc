@@ -1,2 +1,0 @@
-use exploits/unix/http/twiki_debug_plugins
-resource stub_http_explt_rhost.rb

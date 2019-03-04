@@ -1,2 +1,0 @@
-use auxiliary/scanner/http/gitlab_user_enum
-resource stub_http_rhosts.rb

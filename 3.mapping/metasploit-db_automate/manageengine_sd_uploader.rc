@@ -1,2 +1,0 @@
-use exploits/multi/http/manageengine_sd_uploader
-resource stub_http_explt_rhost.rb

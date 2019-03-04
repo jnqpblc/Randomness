@@ -1,2 +1,0 @@
-use exploits/unix/webapp/kimai_sqli
-resource stub_http_explt_rhost.rb

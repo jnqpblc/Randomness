@@ -1,2 +1,0 @@
-use auxiliary/scanner/smtp/smtp_enum
-resource stub_smtp_rhosts.rb

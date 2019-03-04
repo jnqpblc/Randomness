@@ -1,2 +1,0 @@
-use exploits/multi/http/stunshell_eval
-resource stub_http_explt_rhost.rb

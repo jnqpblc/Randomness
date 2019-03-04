@@ -1,2 +1,0 @@
-use exploits/windows/oracle/extjob
-resource stub_oracle_explt_rhost.rb

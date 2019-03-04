@@ -1,2 +1,0 @@
-use exploits/multi/http/novell_servicedesk_rce
-resource stub_http_explt_rhost.rb

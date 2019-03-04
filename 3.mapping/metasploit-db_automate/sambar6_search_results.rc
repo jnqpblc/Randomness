@@ -1,2 +1,0 @@
-use exploits/windows/http/sambar6_search_results
-resource stub_http_explt_rhost.rb

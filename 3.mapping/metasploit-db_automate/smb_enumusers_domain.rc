@@ -1,2 +1,0 @@
-use auxiliary/scanner/smb/smb_enumusers_domain
-resource stub_smb_rhosts.rb

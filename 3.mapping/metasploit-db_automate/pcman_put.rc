@@ -1,2 +1,0 @@
-use exploits/windows/ftp/pcman_put
-resource stub_ftp_explt_rhost.rb

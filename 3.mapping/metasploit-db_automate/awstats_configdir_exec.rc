@@ -1,2 +1,0 @@
-use exploits/unix/webapp/awstats_configdir_exec
-resource stub_http_explt_rhost.rb

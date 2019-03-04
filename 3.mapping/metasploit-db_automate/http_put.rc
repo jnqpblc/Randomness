@@ -1,4 +1,0 @@
-use auxiliary/scanner/http/http_put
-set FILEDATA "It Works!"
-set FILENAME index.html.old.txt
-resource stub_http_rhosts.rb

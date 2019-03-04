@@ -1,2 +1,0 @@
-use auxiliary/scanner/http/tomcat_mgr_login
-resource stub_http_rhosts.rb

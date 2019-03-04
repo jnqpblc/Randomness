@@ -1,2 +1,0 @@
-use exploits/linux/http/vap2500_tools_command_exec
-resource stub_http_explt_rhost.rb

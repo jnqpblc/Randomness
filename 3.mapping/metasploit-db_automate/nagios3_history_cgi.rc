@@ -1,2 +1,0 @@
-use exploits/unix/webapp/nagios3_history_cgi
-resource stub_http_explt_rhost.rb

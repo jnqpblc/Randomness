@@ -1,2 +1,0 @@
-use auxiliary/scanner/dcerpc/tcp_dcerpc_auditor
-resource stub_rpc_rhosts.rb

@@ -1,2 +1,0 @@
-use exploits/mainframe/ftp/ftp_jcl_creds
-resource stub_ftp_explt_rhost.rb

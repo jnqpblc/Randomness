@@ -1,8 +1,0 @@
-use auxiliary/scanner/ftp/ftp_login
-set USER_FILE /usr/share/metasploit-framework/data/wordlists/unix_users.txt
-set BLANK_PASSWORDS true
-set USER_AS_PASS true
-unset PASS_FILE
-set VERBOSE false
-set THREADS 10
-resource stub_ftp_rhosts.rb

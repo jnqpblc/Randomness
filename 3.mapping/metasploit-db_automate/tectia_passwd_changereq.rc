@@ -1,2 +1,0 @@
-use exploits/unix/ssh/tectia_passwd_changereq
-resource stub_ssh_explt_rhost.rb

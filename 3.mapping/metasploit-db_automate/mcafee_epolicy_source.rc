@@ -1,2 +1,0 @@
-use exploits/windows/http/mcafee_epolicy_source
-resource stub_http_explt_rhost.rb

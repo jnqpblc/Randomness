@@ -1,3 +1,0 @@
-use auxiliary/scanner/ipmi/ipmi_version
-set RPORT 623
-resource stub_all_rhosts.rb

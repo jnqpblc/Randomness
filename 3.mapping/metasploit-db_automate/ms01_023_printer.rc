@@ -1,2 +1,0 @@
-use exploits/windows/iis/ms01_023_printer
-resource stub_http_explt_rhost.rb

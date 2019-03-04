@@ -1,2 +1,0 @@
-use exploits/unix/webapp/spip_connect_exec
-resource stub_http_explt_rhost.rb

@@ -1,2 +1,0 @@
-use exploits/linux/misc/jenkins_java_deserialize
-resource stub_http_explt_rhost.rb

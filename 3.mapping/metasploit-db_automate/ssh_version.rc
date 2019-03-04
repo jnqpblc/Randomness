@@ -1,2 +1,0 @@
-use auxiliary/scanner/ssh/ssh_version
-resource stub_ssh_rhosts.rb

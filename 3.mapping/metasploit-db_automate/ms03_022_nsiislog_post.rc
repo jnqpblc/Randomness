@@ -1,2 +1,0 @@
-use exploits/windows/isapi/ms03_022_nsiislog_post
-resource stub_http_explt_rhost.rb

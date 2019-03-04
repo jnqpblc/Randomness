@@ -1,2 +1,0 @@
-use auxiliary/scanner/mysql/mysql_hashdump
-resource stub_mysql_rhosts.rb

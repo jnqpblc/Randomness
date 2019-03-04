@@ -1,2 +1,0 @@
-use exploits/windows/imap/mdaemon_fetch
-resource stub_imap_explt_rhost.rb

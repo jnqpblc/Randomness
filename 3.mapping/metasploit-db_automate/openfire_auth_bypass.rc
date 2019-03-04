@@ -1,2 +1,0 @@
-use exploits/multi/http/openfire_auth_bypass
-resource stub_http_explt_rhost.rb

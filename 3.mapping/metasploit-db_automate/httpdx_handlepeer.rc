@@ -1,2 +1,0 @@
-use exploits/windows/http/httpdx_handlepeer
-resource stub_http_explt_rhost.rb

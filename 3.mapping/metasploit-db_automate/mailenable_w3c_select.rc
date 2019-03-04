@@ -1,2 +1,0 @@
-use exploits/windows/imap/mailenable_w3c_select
-resource stub_imap_explt_rhost.rb

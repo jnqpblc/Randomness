@@ -1,2 +1,0 @@
-use exploits/windows/oracle/tns_auth_sesskey
-resource stub_oracle_explt_rhost.rb

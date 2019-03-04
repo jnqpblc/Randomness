@@ -1,2 +1,0 @@
-use exploits/multi/http/splunk_upload_app_exec
-resource stub_http_explt_rhost.rb

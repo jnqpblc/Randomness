@@ -1,2 +1,0 @@
-use exploits/unix/webapp/wp_total_cache_exec
-resource stub_http_explt_rhost.rb

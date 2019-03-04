@@ -1,2 +1,0 @@
-use exploits/linux/samba/setinfopolicy_heap
-resource stub_smb_explt_rhost.rb

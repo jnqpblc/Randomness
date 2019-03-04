@@ -1,2 +1,0 @@
-use exploits/windows/ssh/sysax_ssh_username
-resource stub_ssh_explt_rhost.rb

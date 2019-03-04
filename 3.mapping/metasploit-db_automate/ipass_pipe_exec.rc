@@ -1,2 +1,0 @@
-use exploits/windows/smb/ipass_pipe_exec
-resource stub_smb_explt_rhosts.rb

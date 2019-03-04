@@ -1,7 +1,0 @@
-use auxiliary/scanner/http/gitlab_login
-set TARGETURI /users/sign_in
-set BLANK_PASSWORDS true
-set USER_AS_PASS true
-set VERBOSE false
-set PASS_FILE /usr/share/wordlists/metasploit/ipmi_passwords.txt
-resource stub_http_rhosts.rb

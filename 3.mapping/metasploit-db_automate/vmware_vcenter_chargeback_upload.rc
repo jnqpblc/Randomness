@@ -1,2 +1,0 @@
-use exploits/windows/http/vmware_vcenter_chargeback_upload
-resource stub_http_explt_rhost.rb

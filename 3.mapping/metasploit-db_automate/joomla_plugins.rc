@@ -1,2 +1,0 @@
-use auxiliary/scanner/http/joomla_plugins
-resource stub_http_rhosts.rb

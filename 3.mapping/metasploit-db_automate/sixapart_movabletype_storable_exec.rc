@@ -1,2 +1,0 @@
-use exploits/unix/webapp/sixapart_movabletype_storable_exec
-resource stub_http_explt_rhost.rb

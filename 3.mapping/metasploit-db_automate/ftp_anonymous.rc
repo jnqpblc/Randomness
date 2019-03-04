@@ -1,2 +1,0 @@
-use auxiliary/scanner/ftp/anonymous
-resource stub_ftp_rhosts.rb

@@ -1,2 +1,0 @@
-use exploits/windows/http/cyclope_ess_sqli
-resource stub_http_explt_rhost.rb

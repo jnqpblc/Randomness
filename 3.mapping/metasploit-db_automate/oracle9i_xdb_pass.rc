@@ -1,2 +1,0 @@
-use exploits/windows/http/oracle9i_xdb_pass
-resource stub_http_explt_rhost.rb

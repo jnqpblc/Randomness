@@ -1,2 +1,0 @@
-use exploits/windows/http/amlibweb_webquerydll_app
-resource stub_http_explt_rhost.rb

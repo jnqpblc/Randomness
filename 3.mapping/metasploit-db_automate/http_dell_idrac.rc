@@ -1,2 +1,0 @@
-use auxiliary/scanner/http/dell_idrac
-resource stub_http_rhosts.rb

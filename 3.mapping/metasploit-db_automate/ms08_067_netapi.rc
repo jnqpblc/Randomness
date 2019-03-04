@@ -1,2 +1,0 @@
-use exploits/windows/smb/ms08_067_netapi
-resource stub_smb_explt_rhosts.rb

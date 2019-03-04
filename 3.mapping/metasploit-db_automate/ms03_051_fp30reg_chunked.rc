@@ -1,2 +1,0 @@
-use exploits/windows/isapi/ms03_051_fp30reg_chunked
-resource stub_http_explt_rhost.rb

@@ -1,2 +1,0 @@
-use exploits/multi/http/hyperic_hq_script_console
-resource stub_http_explt_rhost.rb

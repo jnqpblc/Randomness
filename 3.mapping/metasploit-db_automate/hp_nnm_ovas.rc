@@ -1,2 +1,0 @@
-use exploits/windows/http/hp_nnm_ovas
-resource stub_http_explt_rhost.rb

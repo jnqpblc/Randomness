@@ -1,7 +1,0 @@
-use auxiliary/scanner/winrm/winrm_login
-set USERNAME administrator
-set BLANK_PASSWORDS true
-set USER_AS_PASS true
-set VERBOSE false
-set PASS_FILE /usr/share/wordlists/metasploit/ipmi_passwords.txt
-resource stub_winrm_rhosts.rb

@@ -1,2 +1,0 @@
-use auxiliary/scanner/http/webdav_scanner
-resource stub_http_rhosts.rb

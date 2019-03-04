@@ -1,2 +1,0 @@
-use exploits/linux/http/f5_icontrol_exec
-resource stub_http_explt_rhost.rb

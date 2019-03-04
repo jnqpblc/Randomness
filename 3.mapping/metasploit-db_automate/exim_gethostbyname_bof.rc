@@ -1,3 +1,0 @@
-use exploits/linux/smtp/exim_gethostbyname_bof
-set SENDER_HOST_ADDRESS 127.0.0.1
-resource stub_smtp_explt_rhost.rb

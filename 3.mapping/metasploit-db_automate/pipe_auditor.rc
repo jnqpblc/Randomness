@@ -1,2 +1,0 @@
-use auxiliary/scanner/smb/pipe_auditor
-resource stub_smb_rhosts.rb

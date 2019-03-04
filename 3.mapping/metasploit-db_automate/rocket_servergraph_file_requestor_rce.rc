@@ -1,2 +1,0 @@
-use exploits/multi/http/rocket_servergraph_file_requestor_rce
-resource stub_http_explt_rhost.rb

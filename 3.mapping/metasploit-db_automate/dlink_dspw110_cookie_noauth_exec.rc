@@ -1,2 +1,0 @@
-use exploits/linux/http/dlink_dspw110_cookie_noauth_exec
-resource stub_http_explt_rhost.rb

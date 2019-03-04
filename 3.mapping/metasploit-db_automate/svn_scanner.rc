@@ -1,2 +1,0 @@
-use auxiliary/scanner/http/svn_scanner
-resource stub_http_rhosts.rb

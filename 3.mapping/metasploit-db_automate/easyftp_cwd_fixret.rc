@@ -1,2 +1,0 @@
-use exploits/windows/ftp/easyftp_cwd_fixret
-resource stub_ftp_explt_rhost.rb

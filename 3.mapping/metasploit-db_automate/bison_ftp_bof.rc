@@ -1,2 +1,0 @@
-use exploits/windows/ftp/bison_ftp_bof
-resource stub_ftp_explt_rhost.rb

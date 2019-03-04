@@ -1,2 +1,0 @@
-use exploits/linux/http/dolibarr_cmd_exec
-resource stub_http_explt_rhost.rb

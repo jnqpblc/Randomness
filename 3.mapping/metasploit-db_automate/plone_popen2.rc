@@ -1,2 +1,0 @@
-use exploits/multi/http/plone_popen2
-resource stub_http_explt_rhost.rb

@@ -1,2 +1,0 @@
-use auxiliary/scanner/http/jboss_status
-resource stub_http_rhosts.rb

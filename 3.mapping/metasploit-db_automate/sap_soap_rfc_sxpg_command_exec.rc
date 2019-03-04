@@ -1,2 +1,0 @@
-use exploits/multi/sap/sap_soap_rfc_sxpg_command_exec
-resource stub_http_explt_rhost.rb

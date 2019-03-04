@@ -1,2 +1,0 @@
-use exploits/windows/http/xitami_if_mod_since
-resource stub_http_explt_rhost.rb

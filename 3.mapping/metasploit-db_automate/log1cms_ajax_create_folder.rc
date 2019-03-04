@@ -1,2 +1,0 @@
-use exploits/multi/http/log1cms_ajax_create_folder
-resource stub_http_explt_rhost.rb

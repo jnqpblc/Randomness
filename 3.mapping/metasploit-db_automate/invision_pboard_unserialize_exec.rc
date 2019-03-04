@@ -1,2 +1,0 @@
-use exploits/unix/webapp/invision_pboard_unserialize_exec
-resource stub_http_explt_rhost.rb

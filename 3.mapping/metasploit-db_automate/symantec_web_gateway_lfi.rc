@@ -1,2 +1,0 @@
-use exploits/linux/http/symantec_web_gateway_lfi
-resource stub_http_explt_rhost.rb

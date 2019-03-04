@@ -1,2 +1,0 @@
-use exploits/windows/http/mdaemon_worldclient_form2raw
-resource stub_http_explt_rhost.rb

@@ -1,2 +1,0 @@
-use exploits/linux/http/tr064_ntpserver_cmdinject
-resource stub_http_explt_rhost.rb

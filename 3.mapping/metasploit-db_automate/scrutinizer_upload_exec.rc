@@ -1,2 +1,0 @@
-use exploits/windows/mysql/scrutinizer_upload_exec
-resource stub_mysql_explt_rhost.rb

@@ -1,2 +1,0 @@
-use auxiliary/voip/cisco_cucdm_call_forward
-resource stub_http_rhost.rb

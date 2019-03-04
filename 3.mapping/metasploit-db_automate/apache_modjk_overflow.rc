@@ -1,2 +1,0 @@
-use exploits/windows/http/apache_modjk_overflow
-resource stub_http_explt_rhost.rb

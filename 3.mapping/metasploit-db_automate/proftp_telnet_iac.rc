@@ -1,2 +1,0 @@
-use exploits/linux/ftp/proftp_telnet_iac
-resource stub_ftp_explt_rhost.rb

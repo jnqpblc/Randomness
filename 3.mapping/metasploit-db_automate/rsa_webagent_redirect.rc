@@ -1,2 +1,0 @@
-use exploits/windows/isapi/rsa_webagent_redirect
-resource stub_http_explt_rhost.rb

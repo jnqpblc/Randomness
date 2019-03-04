@@ -1,2 +1,0 @@
-use exploits/unix/webapp/vicidial_manager_send_cmd_exec
-resource stub_http_explt_rhost.rb

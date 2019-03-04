@@ -1,2 +1,0 @@
-use exploits/windows/http/sws_connection_bof
-resource stub_http_explt_rhost.rb

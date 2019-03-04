@@ -1,2 +1,0 @@
-use auxiliary/scanner/scada/digi_addp_version
-resource stub_all_rhosts.rb

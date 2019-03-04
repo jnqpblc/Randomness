@@ -1,2 +1,0 @@
-use exploits/windows/http/netgear_nms_rce
-resource stub_http_explt_rhost.rb

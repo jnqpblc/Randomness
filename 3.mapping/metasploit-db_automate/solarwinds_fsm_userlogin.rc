@@ -1,2 +1,0 @@
-use exploits/windows/http/solarwinds_fsm_userlogin
-resource stub_http_explt_rhost.rb

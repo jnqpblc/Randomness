@@ -1,2 +1,0 @@
-use auxiliary/scanner/misc/java_rmi_server
-resource stub_rmi_rhosts.rb

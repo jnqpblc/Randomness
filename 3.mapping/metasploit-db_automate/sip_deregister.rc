@@ -1,3 +1,0 @@
-use auxiliary/voip/sip_deregister
-set SRCADDR 127.0.0.1
-resource stub_voip_rhosts.rb

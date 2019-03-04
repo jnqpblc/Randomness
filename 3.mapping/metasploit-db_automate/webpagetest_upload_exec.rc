@@ -1,2 +1,0 @@
-use exploits/multi/http/webpagetest_upload_exec
-resource stub_http_explt_rhost.rb

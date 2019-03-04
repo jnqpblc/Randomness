@@ -1,2 +1,0 @@
-use auxiliary/scanner/telnet/lantronix_telnet_version
-resource stub_telnet_rhosts.rb
