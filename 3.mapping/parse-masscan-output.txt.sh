@@ -40,6 +40,6 @@ else
       done
     done
   else
-    printf "\nSyntax: $0 <masscan-output.txt> <format|summary|csv>\n\n"
+    printf "\nSyntax: $0 <masscan-output.txt> <{format}|summary|ports|csv|xml|sqlite>\n\n"
   fi
 fi
