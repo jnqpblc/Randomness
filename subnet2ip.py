@@ -25,4 +25,4 @@ import socket, random
 from netaddr import *
 
 subnet = sys.argv[1]
-for ip in IPNetwork(subnet): print '%s' % ip
+for ip in IPNetwork(subnet): print('%s' % ip)
